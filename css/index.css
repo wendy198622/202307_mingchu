@@ -2048,6 +2048,7 @@ footer #goTop:hover {
   width: 100%;
   border-bottom: 1px solid #c9a063;
   margin-top: 20px;
+  position: relative;
   overflow: hidden;
 }
 
@@ -2192,5 +2193,12 @@ footer #goTop:hover {
 
 .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item button:hover {
   cursor: pointer;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item .code {
+  position: absolute;
+  width: 20%;
+  right: 0;
+  bottom: 5px;
 }
 /*# sourceMappingURL=index.css.map */

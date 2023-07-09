@@ -1132,6 +1132,7 @@
                     width: 100%;
                     border-bottom: 1px solid #c9a063;
                     margin-top: 20px;
+                    position: relative;
                     overflow: hidden;
 
                     &.noline{
@@ -1256,6 +1257,13 @@
                         &:hover{
                             cursor: pointer;
                         }
+                    }
+
+                    .code{
+                        position: absolute;
+                        width: 20%;
+                        right: 0;
+                        bottom: 5px;
                     }
                 }
             }
