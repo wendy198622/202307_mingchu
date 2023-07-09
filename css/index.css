@@ -673,6 +673,7 @@ footer #goTop:hover {
   .theme .theme_feature .theme_feature_slider.slick-dotted.slick-slider .slick-dots li {
     width: 8px;
     height: 8px;
+    margin: 0 3px;
   }
 }
 
@@ -690,6 +691,7 @@ footer #goTop:hover {
   .theme .theme_feature .theme_feature_slider.slick-dotted.slick-slider .slick-dots li button {
     width: 8px;
     height: 8px;
+    padding: 2px;
   }
 }
 
@@ -931,6 +933,7 @@ footer #goTop:hover {
   .theme .theme_team .theme_team_member .theme_team_slider.slick-dotted.slick-slider .slick-dots li {
     width: 8px;
     height: 8px;
+    margin: 0 3px;
   }
 }
 
@@ -948,6 +951,7 @@ footer #goTop:hover {
   .theme .theme_team .theme_team_member .theme_team_slider.slick-dotted.slick-slider .slick-dots li button {
     width: 8px;
     height: 8px;
+    padding: 2px;
   }
 }
 
@@ -1145,6 +1149,7 @@ footer #goTop:hover {
   .theme .theme_portfolio .theme_portfolio_slider.slick-dotted.slick-slider .slick-dots li {
     width: 8px;
     height: 8px;
+    margin: 0 3px;
   }
 }
 
@@ -1162,6 +1167,7 @@ footer #goTop:hover {
   .theme .theme_portfolio .theme_portfolio_slider.slick-dotted.slick-slider .slick-dots li button {
     width: 8px;
     height: 8px;
+    padding: 2px;
   }
 }
 
@@ -1378,6 +1384,7 @@ footer #goTop:hover {
   .theme .theme_project .theme_project_slider.slick-dotted.slick-slider .slick-dots li {
     width: 8px;
     height: 8px;
+    margin: 0 3px;
   }
 }
 
@@ -1395,6 +1402,7 @@ footer #goTop:hover {
   .theme .theme_project .theme_project_slider.slick-dotted.slick-slider .slick-dots li button {
     width: 8px;
     height: 8px;
+    padding: 2px;
   }
 }
 
@@ -1673,6 +1681,7 @@ footer #goTop:hover {
   .theme .theme_news .theme_news_slider.slick-dotted.slick-slider .slick-dots li {
     width: 8px;
     height: 8px;
+    margin: 0 3px;
   }
 }
 
@@ -1690,6 +1699,7 @@ footer #goTop:hover {
   .theme .theme_news .theme_news_slider.slick-dotted.slick-slider .slick-dots li button {
     width: 8px;
     height: 8px;
+    padding: 2px;
   }
 }
 
@@ -2087,6 +2097,12 @@ footer #goTop:hover {
   }
 }
 
+@media (max-width: 600px) {
+  .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item label span {
+    width: 80px;
+  }
+}
+
 .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item input[type="text"] {
   width: 100%;
   height: 40px;
@@ -2160,6 +2176,18 @@ footer #goTop:hover {
   font-size: 15px;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
   display: block;
+}
+
+@media (max-width: 800px) {
+  .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item button {
+    width: 324px;
+  }
+}
+
+@media (max-width: 426px) {
+  .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item button {
+    width: 100%;
+  }
 }
 
 .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item button:hover {
