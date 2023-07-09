@@ -513,13 +513,14 @@ footer #footerMenu .menuBox .menu_item .menu_item_content {
 footer #footerMenu .menuBox .menu_item .menu_item_content ul li {
   background-color: transparent;
   width: 100%;
-  margin: 0 0 5px 0;
+  margin: 0 0 5px;
 }
 
 @media (max-width: 968px) {
   footer #footerMenu .menuBox .menu_item .menu_item_content ul li {
     width: auto;
     display: inline-block;
+    margin: 0 5px 5px;
   }
 }
 
