@@ -556,6 +556,12 @@ footer #footerMenu .menuBox .menu_item .menu_item_info p, footer #footerMenu .me
   }
 }
 
+@media (max-width: 968px) {
+  footer #footerMenu .menuBox .menu_item .menu_item_info p, footer #footerMenu .menuBox .menu_item .menu_item_info a, footer #footerMenu .menuBox .menu_item .menu_item_info span {
+    font-size: 16px;
+  }
+}
+
 footer #footerMenu .menuBox .menu_item .menu_item_info p {
   width: 100%;
   margin-bottom: 5px;
