@@ -177,6 +177,7 @@
         background: url(../img/team_bg.jpg) center top no-repeat;
         background-size: cover;
         padding: 96px 0;
+        background-attachment: fixed;
         @media (max-width:1280px){
             padding: 8% 0 12%;
         }
@@ -520,6 +521,7 @@
         background-size: cover;
         padding: 220px 0 160px;
         overflow: hidden;
+        background-attachment: fixed;
         @media (max-width:1280px){
             padding: 14% 0 10%;
         }
@@ -949,6 +951,7 @@
         background: url(../img/consultation_bg.jpg) center top no-repeat;
         background-size: cover;
         padding: 140px 0 40px;
+        background-attachment: fixed;
         @media (max-width:1280px){
             padding: 8% 0 6%;
         }
