@@ -12,6 +12,13 @@
         // height: 0;
         // padding-bottom: 56.2%;
         // background: #000;
+
+        .pc{ display: block;}
+        .mob{ display: none;}
+        @media (max-width:800px){
+            .pc{ display: none;}
+            .mob{ display: block;}
+        }
         
         iframe, video{
             position: absolute;
