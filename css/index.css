@@ -1693,6 +1693,23 @@ footer #goTop:hover {
   }
 }
 
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_title p.pc {
+  display: block;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_title p.mob {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .theme .theme_consultation .theme_consultation_inner .theme_consultation_title p.pc {
+    display: none;
+  }
+  .theme .theme_consultation .theme_consultation_inner .theme_consultation_title p.mob {
+    display: block;
+  }
+}
+
 .theme .theme_consultation .theme_consultation_inner .theme_consultation_link {
   width: calc(640 / 1440 * 100%);
   text-align: center;

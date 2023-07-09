@@ -956,6 +956,13 @@
                     @media (max-width:960px){
                         margin: 10px 0 20px;
                     }  
+
+                    &.pc{ display: block;}
+                    &.mob{ display: none;}
+                    @media (max-width:600px){
+                        &.pc{ display: none;}
+                        &.mob{ display: block;}
+                    }
                 }
             }
 
