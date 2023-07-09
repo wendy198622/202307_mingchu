@@ -46,6 +46,10 @@
                     li{
                         width: 10px;
                         height: 10px;
+                        @media (max-width:800px){
+                            width: 8px;
+                            height: 8px;
+                        }
 
                         button{
                             width: 10px;
@@ -54,6 +58,10 @@
                             &:before,
                             &:after{
                                 display: none;
+                            }
+                            @media (max-width:800px){
+                                width: 8px;
+                                height: 8px;
                             }
 
                         }
@@ -236,6 +244,10 @@
                         li{
                             width: 10px;
                             height: 10px;
+                            @media (max-width:800px){
+                                width: 8px;
+                                height: 8px;
+                            }
 
                             button{
                                 width: 10px;
@@ -244,6 +256,10 @@
                                 &:before,
                                 &:after{
                                     display: none;
+                                }
+                                @media (max-width:800px){
+                                    width: 8px;
+                                    height: 8px;
                                 }
 
                             }
@@ -400,12 +416,19 @@
                 .slick-dots{
                     bottom: -60px;
                     @media (max-width:1280px){
-                        font-size: -8%;
+                        bottom: -8%;
                     }     
+                    @media (max-width:480px){
+                        bottom: -5%;
+                    }
     
                     li{
                         width: 10px;
                         height: 10px;
+                        @media (max-width:800px){
+                            width: 8px;
+                            height: 8px;
+                        }
     
                         button{
                             width: 10px;
@@ -414,6 +437,10 @@
                             &:before,
                             &:after{
                                 display: none;
+                            }
+                            @media (max-width:800px){
+                                width: 8px;
+                                height: 8px;
                             }
     
                         }
@@ -581,6 +608,10 @@
                     li{
                         width: 10px;
                         height: 10px;
+                        @media (max-width:800px){
+                            width: 8px;
+                            height: 8px;
+                        }
 
                         button{
                             width: 10px;
@@ -589,6 +620,10 @@
                             &:before,
                             &:after{
                                 display: none;
+                            }
+                            @media (max-width:800px){
+                                width: 8px;
+                                height: 8px;
                             }
 
                         }
@@ -789,10 +824,17 @@
                     @media (max-width:800px){
                         bottom: -16%;
                     }
+                    @media (max-width:480px){
+                        bottom: -10%;
+                    }
 
                     li{
                         width: 10px;
                         height: 10px;
+                        @media (max-width:800px){
+                            width: 8px;
+                            height: 8px;
+                        }
 
                         button{
                             width: 10px;
@@ -801,6 +843,10 @@
                             &:before,
                             &:after{
                                 display: none;
+                            }
+                            @media (max-width:800px){
+                                width: 8px;
+                                height: 8px;
                             }
 
                         }
