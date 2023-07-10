@@ -1691,7 +1691,7 @@ footer #goTop:hover {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .theme .theme_news .theme_news_slider.slick-dotted.slick-slider .slick-dots {
     bottom: -10%;
   }
