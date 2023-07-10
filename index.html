@@ -770,18 +770,22 @@
 
 		$('.theme_feature_slider').slick({
 			dots: true,
-			arrows: false,
+			arrows: true,
 			infinite: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
 		});
 
 		$('.theme_team_slider').slick({
 			dots: true,
-			arrows: false,
+			arrows: true,
 			infinite: false,
 			slidesToShow: 5,
 			slidesToScroll: 1,
+			prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
 			responsive: [
 				{
 					breakpoint: 1081,
@@ -806,13 +810,15 @@
 		
 		$('.theme_portfolio_slider').slick({
 			dots: true,
-			arrows: false,
+			arrows: true,
 			slidesToShow: 5,
 			slidesToScroll: 1,
 			centerMode: true,
 			autoplay: true,
 			speed: 300,
 			// centerPadding: '60px',
+			prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
 			responsive: [
 				{
 					breakpoint: 1081,
@@ -831,18 +837,22 @@
 
 		$('.theme_project_slider').slick({
 			dots: true,
-			arrows: false,
+			arrows: true,
 			infinite: false,
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
 		});
 
 		$('.theme_news_slider').slick({
 			dots: true,
-			arrows: false,
+			arrows: true,
 			infinite: false,
 			slidesToShow: 3.4,
 			slidesToScroll: 1,
+			prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
 			responsive: [
 				{
 					breakpoint: 961,
@@ -866,7 +876,6 @@
   			// fade: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			asNavFor: '.theme_consultation_nav'
 		});
 		
 		$('.theme_consultation_nav').slick({
@@ -897,7 +906,7 @@
 		$('.theme_news_slider .slick-dots').append($('#news_more'));
 	
 		
-		$("button").click(function() {
+		$(".theme_consultation_form button").click(function() {
 			$(".popup_send").addClass("is_acted");
 
 			setTimeout(function() {
