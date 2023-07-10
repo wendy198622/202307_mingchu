@@ -1673,7 +1673,7 @@ footer #goTop:hover {
 }
 
 .theme .theme_news .theme_news_slider.slick-dotted.slick-slider .slick-dots {
-  bottom: -8%;
+  bottom: -22%;
   -webkit-transform: translateX(-120px);
           transform: translateX(-120px);
 }
@@ -1820,10 +1820,11 @@ footer #goTop:hover {
 }
 
 .theme .theme_consultation {
-  background: url(../img/consultation_bg.jpg) center top no-repeat;
+  background-image: url(../img/consultation_bg1.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 140px 0 40px;
-  background-attachment: fixed;
 }
 
 @media (max-width: 1280px) {
@@ -1967,66 +1968,118 @@ footer #goTop:hover {
   }
 }
 
-.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item {
-  width: calc((100% - 12px) / 2);
-  height: 76px;
-  float: left;
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .slick-slide {
+  width: 50% !important;
+  padding: 5px;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item {
   background-color: #c9a063;
   border: 5px solid #c9a063;
-  margin-bottom: 12px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+  padding: 23.5px 0;
 }
 
-@media (max-width: 960px) and (min-width: 641px) {
-  .theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item {
-    width: calc((100% - 36px) / 4);
-  }
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item.bigtext {
+  padding: 10px 0;
 }
 
-.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item:nth-last-child(-n+1), .theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item:nth-last-child(-n+2) {
-  margin-bottom: 0;
-}
-
-.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item:before {
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item:before, .theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item:after {
+  position: absolute;
   content: "";
-  width: 0;
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
+  right: 0;
+  top: 0;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item:nth-child(odd) {
-  margin-right: 12px;
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item:before {
+  height: 0%;
+  width: 2px;
 }
 
-@media (max-width: 960px) and (min-width: 641px) {
-  .theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item:nth-child(even) {
-    margin-right: 12px;
-  }
-  .theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item:nth-child(4n) {
-    margin-right: 0;
-  }
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item:after {
+  width: 0%;
+  height: 2px;
 }
 
-.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item:first-child {
-  -webkit-box-shadow: 0 0 0 2px #fff inset;
-          box-shadow: 0 0 0 2px #fff inset;
-}
-
-.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item a {
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item span {
   width: 100%;
+  height: 100%;
   color: #fff;
   font-size: 20px;
   line-height: 1.4;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: -4px;
+  display: block;
 }
 
 @media (max-width: 1280px) {
-  .theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_link_item a {
+  .theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item span {
     font-size: 16px;
   }
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item span:before, .theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item span:after {
+  width: 0%;
+  height: 2px;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item:hover {
+  cursor: pointer;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item:hover:before {
+  height: 100%;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item:hover:after {
+  width: 100%;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item:hover span:before {
+  height: 100%;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .theme_consultation_link_item:hover span:after {
+  width: 100%;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .slick-current .theme_consultation_link_item:before {
+  height: 100%;
+  width: 2px;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .slick-current .theme_consultation_link_item:after {
+  width: 100%;
+  height: 2px;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .slick-current .theme_consultation_link_item span:before {
+  width: 2px;
+  height: 100%;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_link .theme_consultation_nav .slick-current .theme_consultation_link_item span:after {
+  width: 100%;
+  height: 2px;
 }
 
 .theme .theme_consultation .theme_consultation_inner .form-border-top,

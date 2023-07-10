@@ -844,7 +844,7 @@
                 }
             
                 .slick-dots{
-                    bottom: -8%;
+                    bottom: -22%;
                     transform: translateX(-120px);
                     @media (max-width:1480px){
                         transform: translateX(0px);
@@ -966,10 +966,12 @@
     }
 
     .theme_consultation{
-        background: url(../img/consultation_bg.jpg) center top no-repeat;
+        background-image: url(../img/consultation_bg1.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
         background-size: cover;
         padding: 140px 0 40px;
-        background-attachment: fixed;
+        // background-attachment: fixed;
         @media (max-width:1280px){
             padding: 8% 0 6%;
         }
@@ -1065,61 +1067,114 @@
                     position: static;
                     margin-bottom: 20px;
                 }
-
-                .theme_consultation_link_item{
-                    width: calc((100% - 12px) / 2);
-                    height: 76px;
-                    float: left;
-                    background-color: #c9a063;
-                    border: 5px solid #c9a063;
-                    margin-bottom: 12px;
-                    @media (max-width:960px) and (min-width:641px){
-                        width: calc((100% - 36px) / 4);
+                .theme_consultation_nav{
+                    .slick-slide{
+                        width: 50% !important;
+                        padding: 5px;
                     }
+                    
+                    .theme_consultation_link_item{
+                        background-color: #c9a063;
+                        border: 5px solid #c9a063;
+                        // margin-bottom: 12px;
+                        transition: all .5s;
+                        position: relative;
+                        padding: 23.5px 0;
 
-                    &:nth-last-child(-n+1),
-                    &:nth-last-child(-n+2){
-                        margin-bottom: 0;
-                    }
+                        &.bigtext{
+                            padding: 10px 0;
+                        }
 
-                    &:before{
-                        content: "";
-                        width: 0;
-                        height: 100%;
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
+                        &:before, &:after {
+                            position: absolute;
+                            content: "";
+                            right: 0;
+                            top: 0;
+                            background: #fff;
+                            transition: all 0.3s ease;
+                        }
+                        &:before {
+                            height: 0%;
+                            width: 2px;
+                        }
+                        &:after {
+                            width: 0%;
+                            height: 2px;
+                        }
+
     
-                    &:nth-child(odd){
-                        margin-right: 12px;
-                    }
+                        span{
+                            width: 100%;
+                            height: 100%;
+                            color: #fff;
+                            font-size: 20px;
+                            line-height: 1.4;
+                            font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                            display: block;
+                            @media (max-width:1280px){
+                                font-size: 16px;
+                            }
 
-                    @media (max-width:960px) and (min-width:641px){
-                        &:nth-child(even){
-                            margin-right: 12px;
+                            &:before, &:after {
+                                position: absolute;
+                                content: "";
+                                left: 0;
+                                bottom: 0;
+                                background: #fff;
+                                transition: all 0.3s ease;
+                            }
+                            &:before {
+                                width: 2px;
+                                height: 0%;
+                            }
+                            &:after {
+                                width: 0%;
+                                height: 2px;
+                            }
                         }
-                        &:nth-child(4n){
-                            margin-right: 0;
+
+                        &:hover{
+                            cursor: pointer;
+                            &:before {
+                                height: 100%;
+                            }
+                            &:after {
+                                width: 100%;
+                            }
+                            span{
+                                &:before {
+                                    height: 100%;
+                                }
+                                &:after {
+                                    width: 100%;
+                                }
+                            }
                         }
-
+    
                     }
 
-                    &:first-child{
-                        box-shadow: 0 0 0 2px #fff inset;
-                    }
+                    .slick-current{
+                        .theme_consultation_link_item{
+                            &:before {
+                                height: 100%;
+                                width: 2px;
+                            }
+                            &:after {
+                                width: 100%;
+                                height: 2px;
+                            }
+                            span{
+                                &:before {
+                                    width: 2px;
+                                    height: 100%;
+                                }
+                                &:after {
+                                    width: 100%;
+                                    height: 2px;
+                                }
+                            }    
 
-                    a{
-                        width: 100%;
-                        color: #fff;
-                        font-size: 20px;
-                        line-height: 1.4;
-                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
-                        display: inline-block;
-                        vertical-align: middle;
-                        margin-right: -4px;
-                        @media (max-width:1280px){
-                            font-size: 16px;
-                        }             
+                        }
                     }
 
                 }

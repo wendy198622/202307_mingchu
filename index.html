@@ -532,17 +532,19 @@
 								歡迎與我們聯繫，<br>明筑機構將會給您最好的服務。</p>
 					</div>
 					<div class="theme_consultation_link">
-						<div class="theme_consultation_link_item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-							<a href="#" target="_blank">賞屋服務</a>
-						</div>
-						<div class="theme_consultation_link_item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-							<a href="#" target="_blank">買地/興建/合建/<br>都更/危老諮詢</a>
-						</div>
-						<div class="theme_consultation_link_item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-							<a href="#" target="_blank">售後服務</a>
-						</div>
-						<div class="theme_consultation_link_item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
-							<a href="#" target="_blank">人才招募</a>
+						<div class="theme_consultation_nav">
+							<div class="theme_consultation_link_item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+								<span>賞屋服務</span>
+							</div>
+							<div class="theme_consultation_link_item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+								<span>售後服務</span>
+							</div>
+							<div class="theme_consultation_link_item bigtext wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+								<span>買地/興建/合建/<br>都更/危老諮詢</span>
+							</div>
+							<div class="theme_consultation_link_item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+								<span>人才招募</span>
+							</div>
 						</div>
 					</div>
 					<div class="form-border-top">
@@ -858,20 +860,43 @@
 		});
 
 		$('.theme_consultation_slider').slick({
-			dots: true,
+			dots: false,
 			arrows: false,
 			infinite: false,
-  			fade: true,
+  			// fade: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			asNavFor: '.theme_consultation_nav'
 		});
 		
+		$('.theme_consultation_nav').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			asNavFor: '.theme_consultation_slider',
+			dots: false,
+			focusOnSelect: true
+		});
 
+		$(".theme_consultation").on("click", ".slick-slide:nth-child(1)", function() {
+			$(this).closest(".theme_consultation").css("background-image","url(../img/consultation_bg1.jpg)");
+		});
 
+		$(".theme_consultation").on("click", ".slick-slide:nth-child(2)", function() {
+			$(this).closest(".theme_consultation").css("background-image","url(../img/consultation_bg2.jpg)");
+		});
 
+		$(".theme_consultation").on("click", ".slick-slide:nth-child(3)", function() {
+			$(this).closest(".theme_consultation").css("background-image","url(../img/consultation_bg3.jpg)");
+		});
+
+		$(".theme_consultation").on("click", ".slick-slide:nth-child(4)", function() {
+			$(this).closest(".theme_consultation").css("background-image","url(../img/consultation_bg4.jpg)");
+		});
+
+		
 		$('.theme_news_slider .slick-dots').append($('#news_more'));
-		// $('.theme_news_slider .slick-dots').append($('<div class="news_more"><a href="#">MORE</a></div>'));
-	});
+		
+	})
 
 </script>
 </html>
