@@ -755,7 +755,7 @@
 	</section>
 
 	<div class="popup popup_send">
-		<div class="popup_content popup_message">您已送出資訊，我們將與您聯絡</div>
+		<div class="popup_content popup_message">您已送出資訊，我們將與您聯繫</div>
 	</div>
 	
 	<footer id="footer"></footer>
@@ -895,7 +895,15 @@
 
 
 		$('.theme_news_slider .slick-dots').append($('#news_more'));
+	
 		
+		$("button").click(function() {
+			$(".popup_send").addClass("is_acted");
+
+			setTimeout(function() {
+			$(".popup_send").removeClass("is_acted");
+			}, 2000);
+		});
 	})
 
 </script>
