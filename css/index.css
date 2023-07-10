@@ -2129,6 +2129,22 @@ footer #goTop:hover {
   }
 }
 
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item label span.nowidth {
+  width: 300px;
+}
+
+@media (max-width: 1020px) and (min-width: 960px) {
+  .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item label span.nowidth {
+    width: 280px;
+  }
+}
+
+@media (max-width: 540px) {
+  .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item label span.nowidth {
+    width: auto;
+  }
+}
+
 .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item input[type="text"] {
   width: calc(100% - 18px);
   font-size: 20px;

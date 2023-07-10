@@ -1208,7 +1208,17 @@
                             }             
                             @media (max-width:600px){
                                 width: 80px;
-                            }         
+                            }   
+
+                            &.nowidth{
+                                width: 300px;
+                                @media (max-width:1020px) and (min-width:960px){
+                                    width: 280px;
+                                }
+                                @media (max-width:540px){
+                                    width: auto;
+                                }
+                            }      
                         }
                     }
 
@@ -1357,7 +1367,7 @@
                             }
                         }
                     }
-                    
+
                     .code{
                         position: absolute;
                         width: 20%;
