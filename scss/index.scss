@@ -296,6 +296,7 @@
 
                         img{
                             transition: all 1s;
+                            transform-origin: center top;
                         }
                     }
 
@@ -970,7 +971,7 @@
         background-position: center top;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 140px 0 40px;
+        padding: 140px 0 80px;
         // background-attachment: fixed;
         @media (max-width:1280px){
             padding: 8% 0 6%;
