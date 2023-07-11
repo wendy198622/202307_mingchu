@@ -625,23 +625,9 @@ footer #goTop:hover {
 .theme .theme_image {
   position: relative;
   width: 100%;
-}
-
-.theme .theme_image .pc {
-  display: block;
-}
-
-.theme .theme_image .mob {
-  display: none;
-}
-
-@media (max-width: 800px) {
-  .theme .theme_image .pc {
-    display: none;
-  }
-  .theme .theme_image .mob {
-    display: block;
-  }
+  height: 0;
+  padding-bottom: 56.2%;
+  background: #000;
 }
 
 .theme .theme_image iframe, .theme .theme_image video {

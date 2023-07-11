@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>明築建設官網-線上諮詢</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<!-- <link rel="icon" href="img/logo.ico"> -->
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/consult.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/wow.min.js"></script>
+</head>
+
+<body>
+	<header id="header"></header>
+
+	<section>
+		<div class="theme">
+			<div class="theme_consultation">
+				<div class="theme_consultation_inner">
+					<div class="theme_consultation_title">
+						<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">線上諮詢</h3>
+						<h4 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.0s">consultation</h4>
+						<p class="pc wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">歡迎您蒞臨明筑機構網站，若您想進一步了解明筑機構，<br>或對明筑機構有任何指教。<br>
+							歡迎與我們聯繫，明筑機構將會給您最好的服務。</p>
+						<p class="mob wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">歡迎您蒞臨明筑機構網站，<br>若您想進一步了解明筑機構，<br>或對明筑機構有任何指教。<br>
+								歡迎與我們聯繫，<br>明筑機構將會給您最好的服務。</p>
+					</div>
+					<div class="theme_consultation_link">
+						<div class="theme_consultation_nav">
+							<div class="theme_consultation_link_item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+								<span>賞屋服務</span>
+							</div>
+							<div class="theme_consultation_link_item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+								<span>售後服務</span>
+							</div>
+							<div class="theme_consultation_link_item bigtext wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+								<span>買地/興建/合建/<br>都更/危老諮詢</span>
+							</div>
+							<div class="theme_consultation_link_item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+								<span>人才招募</span>
+							</div>
+						</div>
+					</div>
+					<div class="form-border-top">
+						<img src="img/theme_consultation_form_bg_01.png" alt="">
+					</div>
+					<div class="theme_consultation_form">
+						<div class="theme_consultation_slider">
+							<!-- 賞屋 -->
+							<div class="theme_consultation_item">
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+									<label for="building">*<span>建案名稱</span>BUILDING</label>
+									<select id="building">
+										<option selected></option>
+										<option value="option1">建案 1</option>
+										<option value="option2">建案 2</option>
+										<option value="option3">建案 3</option>
+									</select>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+									<label for="name">*<span>姓名</span>NAME</label>
+									<input type="text" v-model="name" name="name" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+									<label for="email">*<span>電子信箱</span>EMAIL</label>
+									<input type="text" v-model="email" name="email" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+									<label for="time">*<span>連絡時間</span>CONTACT TIME</label>
+									<select id="building">
+										<option selected></option>
+										<option value="option1">時間 1</option>
+										<option value="option2">時間 2</option>
+										<option value="option3">時間 3</option>
+									</select>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.0s">
+									<label for="phone">*<span>連絡電話</span>PHONE</label>
+									<input type="text" v-model="phone" name="phone" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
+									<label for="message">*<span>留言內容</span>MESSAGE</label>
+									<textarea id="message" v-model="message" name="message" required></textarea>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
+									<label for="code">*<span>驗證碼</span>CODE</label>
+									<input type="text" v-model="code" name="code" placeholder="" required />
+									<div class="code"><img src="img/theme_consultation_form_code.png" alt=""></div>
+								</div>
+								<div class="item noline wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.6s">
+									<p>點選送出即表示您同意<a href="#" target="_blank">明筑建設個資運用聲明</a></p>
+								</div>
+								<div class="item noline wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.8s">
+									<button><span>送出 SUBMIT</span></button>
+								</div>
+							</div>
+							<!-- 售後 -->
+							<div class="theme_consultation_item">
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+									<label for="building">*<span>建案名稱</span>BUILDING</label>
+									<select id="building">
+										<option selected></option>
+										<option value="option1">建案 1</option>
+										<option value="option2">建案 2</option>
+										<option value="option3">建案 3</option>
+									</select>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+									<label for="name">*<span>姓名</span>NAME</label>
+									<input type="text" v-model="name" name="name" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+									<label for="email">*<span>電子信箱</span>EMAIL</label>
+									<input type="text" v-model="email" name="email" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+									<label for="time">*<span>連絡時間</span>CONTACT TIME</label>
+									<select id="building">
+										<option selected></option>
+										<option value="option1">時間 1</option>
+										<option value="option2">時間 2</option>
+										<option value="option3">時間 3</option>
+									</select>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.0s">
+									<label for="phone">*<span>連絡電話</span>PHONE</label>
+									<input type="text" v-model="phone" name="phone" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
+									<label for="message">*<span>留言內容</span>MESSAGE</label>
+									<textarea id="message" v-model="message" name="message" required></textarea>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
+									<label for="code">*<span>驗證碼</span>CODE</label>
+									<input type="text" v-model="code" name="code" placeholder="" required />
+									<div class="code"><img src="img/theme_consultation_form_code.png" alt=""></div>
+								</div>
+								<div class="item noline wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.6s">
+									<p>點選送出即表示您同意<a href="#" target="_blank">明筑建設個資運用聲明</a></p>
+								</div>
+								<div class="item noline wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.8s">
+									<button><span>送出 SUBMIT</span></button>
+								</div>
+							</div>
+							<!-- 買地 -->
+							<div class="theme_consultation_item">
+								<div class="item  wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+									<label for="building">*<span class="nowidth">買地/興建/合建/都更/危老諮詢</span>BUILDING</label>
+									<select id="building">
+										<option selected></option>
+										<option value="option1">項目 1</option>
+										<option value="option2">項目 2</option>
+										<option value="option3">項目 3</option>
+									</select>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+									<label for="name">*<span>姓名</span>NAME</label>
+									<input type="text" v-model="name" name="name" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+									<label for="email">*<span>電子信箱</span>EMAIL</label>
+									<input type="text" v-model="email" name="email" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+									<label for="time">*<span>連絡時間</span>CONTACT TIME</label>
+									<select id="building">
+										<option selected></option>
+										<option value="option1">時間 1</option>
+										<option value="option2">時間 2</option>
+										<option value="option3">時間 3</option>
+									</select>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.0s">
+									<label for="phone">*<span>連絡電話</span>PHONE</label>
+									<input type="text" v-model="phone" name="phone" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
+									<label for="message">*<span>留言內容</span>MESSAGE</label>
+									<textarea id="message" v-model="message" name="message" required></textarea>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
+									<label for="code">*<span>驗證碼</span>CODE</label>
+									<input type="text" v-model="code" name="code" placeholder="" required />
+									<div class="code"><img src="img/theme_consultation_form_code.png" alt=""></div>
+								</div>
+								<div class="item noline wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.6s">
+									<p>點選送出即表示您同意<a href="#" target="_blank">明筑建設個資運用聲明</a></p>
+								</div>
+								<div class="item noline wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.8s">
+									<button><span>送出 SUBMIT</span></button>
+								</div>
+							</div>
+							<!-- 徵才 -->
+							<div class="theme_consultation_item">
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+									<label for="position">*<span>應徵職務</span>Position Desired</label>
+									<select id="position">
+										<option selected></option>
+										<option value="option1">職務 1</option>
+										<option value="option2">職務 2</option>
+										<option value="option3">職務 3</option>
+									</select>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+									<label for="name">*<span>姓名</span>NAME</label>
+									<input type="text" v-model="name" name="name" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+									<label for="email">*<span>電子信箱</span>EMAIL</label>
+									<input type="text" v-model="email" name="email" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+									<label for="time">*<span>連絡時間</span>CONTACT TIME</label>
+									<select id="building">
+										<option selected></option>
+										<option value="option1">時間 1</option>
+										<option value="option2">時間 2</option>
+										<option value="option3">時間 3</option>
+									</select>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.0s">
+									<label for="phone">*<span>連絡電話</span>PHONE</label>
+									<input type="text" v-model="phone" name="phone" placeholder="" required />
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">
+									<label for="message">*<span>留言內容</span>MESSAGE</label>
+									<textarea id="message" v-model="message" name="message" required></textarea>
+								</div>
+								<div class="item wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
+									<label for="code">*<span>驗證碼</span>CODE</label>
+									<input type="text" v-model="code" name="code" placeholder="" required />
+									<div class="code"><img src="img/theme_consultation_form_code.png" alt=""></div>
+								</div>
+								<div class="item noline wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.6s">
+									<p>點選送出即表示您同意<a href="#" target="_blank">明筑建設個資運用聲明</a></p>
+								</div>
+								<div class="item noline wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.8s">
+									<button><span>送出 SUBMIT</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-border-bottom">
+						<img src="img/theme_consultation_form_bg_03.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="popup popup_send">
+		<div class="popup_content popup_message">您已送出資訊，我們將與您聯繫</div>
+	</div>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		new WOW().init();
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+		$('.theme_feature_slider').slick({
+			dots: true,
+			arrows: true,
+			infinite: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+		});
+
+		$('.theme_team_slider').slick({
+			dots: true,
+			arrows: true,
+			infinite: false,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			responsive: [
+				{
+					breakpoint: 1081,
+					settings: {
+						slidesToShow: 3.5,
+					}
+				},
+				{
+					breakpoint: 801,
+					settings: {
+						slidesToShow: 2.5,
+					}
+				},
+				{
+					breakpoint: 481,
+					settings: {
+						slidesToShow: 1.5,
+					}
+				},
+			]
+		});
+		
+		$('.theme_portfolio_slider').slick({
+			dots: true,
+			arrows: true,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			centerMode: true,
+			autoplay: true,
+			speed: 300,
+			// centerPadding: '60px',
+			prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			responsive: [
+				{
+					breakpoint: 1081,
+					settings: {
+						slidesToShow: 3,
+					}
+				},
+				{
+					breakpoint: 641,
+					settings: {
+						slidesToShow: 1,
+					}
+				},
+			]
+		});
+
+		$('.theme_project_slider').slick({
+			dots: true,
+			arrows: true,
+			infinite: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+		});
+
+		$('.theme_news_slider').slick({
+			dots: true,
+			arrows: true,
+			infinite: false,
+			slidesToShow: 3.4,
+			slidesToScroll: 1,
+			prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
+			responsive: [
+				{
+					breakpoint: 961,
+					settings: {
+						slidesToShow: 2.3,
+					}
+				},
+				{
+					breakpoint: 601,
+					settings: {
+						slidesToShow: 1.3,
+					}
+				},
+			]
+		});
+
+		$('.theme_consultation_slider').slick({
+			dots: false,
+			arrows: false,
+			infinite: false,
+  			// fade: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+		});
+		
+		$('.theme_consultation_nav').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			asNavFor: '.theme_consultation_slider',
+			dots: false,
+			focusOnSelect: true
+		});
+
+		$(".theme_consultation").on("click", ".slick-slide:nth-child(1)", function() {
+			$(this).closest(".theme_consultation").css("background-image","url(img/consultation_bg1.jpg)");
+		});
+
+		$(".theme_consultation").on("click", ".slick-slide:nth-child(2)", function() {
+			$(this).closest(".theme_consultation").css("background-image","url(img/consultation_bg2.jpg)");
+		});
+
+		$(".theme_consultation").on("click", ".slick-slide:nth-child(3)", function() {
+			$(this).closest(".theme_consultation").css("background-image","url(img/consultation_bg3.jpg)");
+		});
+
+		$(".theme_consultation").on("click", ".slick-slide:nth-child(4)", function() {
+			$(this).closest(".theme_consultation").css("background-image","url(img/consultation_bg4.jpg)");
+		});
+
+
+		$('.theme_news_slider .slick-dots').append($('#news_more'));
+	
+		
+		$(".theme_consultation_form button").click(function() {
+			$(".popup_send").addClass("is_acted");
+
+			setTimeout(function() {
+			$(".popup_send").removeClass("is_acted");
+			}, 2000);
+		});
+	})
+
+</script>
+</html>
