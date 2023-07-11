@@ -50,10 +50,10 @@ input, button, textarea {
   width: 100%;
   min-height: 100%;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all .5s;
