@@ -6,10 +6,7 @@
 
 .theme{
     .theme_news{
-        background: url(../img/news_bg.jpg) center top no-repeat;
-        background-size: cover;
         padding: 5% 0 0;
-        overflow: hidden;
 
         .theme_news_inner{
             max-width: 1440px;
@@ -23,12 +20,8 @@
                 width: 260px;
                 float: left;
                 text-align: left;
-                margin-bottom: 72px;
                 @media (max-width:1480px){
                     width: 180px;
-                }
-                @media (max-width:1280px){
-                    margin-bottom: 8%;
                 }
                 @media (max-width:960px){
                     width: 100%;
@@ -36,29 +29,12 @@
                 }
     
                 h3{
-                    font-size: 36px;
-                    color: #00404b;
-                    font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
-                    font-weight: 600;
-                    letter-spacing: 2px;
-                    @media (max-width:1280px){
-                        font-size: 32px;
-                    }
                     @media (max-width:960px){
                         text-align: center;
                     }
                 }
     
                 h4{
-                    font-size: 26px;
-                    color: rgba(0,64,75,.2);
-                    font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
-                    font-weight: 600;
-                    text-transform: uppercase;  
-                    letter-spacing: 2px;
-                    @media (max-width:1280px){
-                        font-size: 22px;
-                    }         
                     @media (max-width:960px){
                         text-align: center;
                     }                  
@@ -129,21 +105,13 @@
                 @media (max-width:960px){
                     width: 100%;
                 }
-                @media (max-width:600px){
-                    padding-bottom: 20%;
-                }
-                @media (max-width:480px){
-                    padding-bottom: 28%;
-                }
     
                 .theme_news_item{
                     width: calc(100% / 3);
                     float: left;
-                    padding: 0 12px;
                     margin-bottom: 60px;
                     @media (max-width:800px){
                         width: calc(100% / 2);
-                        padding: 0 12px;
                     }
                     @media (max-width:480px){
                         width: calc(100% / 1);
@@ -152,47 +120,7 @@
     
                     .theme_news_image{}
     
-                    .theme_news_info{
-                        border-left: 7px solid #c9a063;
-                        padding: 30px 0 0 10px;
-                        margin: -15px 0 0 15px;
-                        position: relative;
-                        z-index: 5;
-    
-    
-                        .theme_news_info_title{
-                            font-size: 32px;
-                            color: #00404b;
-                            font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
-                            font-weight: 600;
-                            letter-spacing: 1px;
-                            @media (max-width:800px){
-                                font-size: 24px;
-                            }   
-                        }
-    
-                        .theme_news_info_subtitle{
-                            font-size: 22px;
-                            color: #00404b;
-                            font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
-                            font-weight: 600;
-                            letter-spacing: 1px;
-                            @media (max-width:800px){
-                                font-size: 18px;
-                            }   
-                        }
-    
-                        .theme_news_info_text{
-                            font-size: 18px;
-                            color: #00404b;
-                            font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
-                            font-weight: 600;
-                            letter-spacing: 1px;
-                            @media (max-width:1280px){
-                                font-size: 16px;
-                            }
-                        }
-                    }
+                    .theme_news_info{}
                 }
             }
         }

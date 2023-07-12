@@ -1,0 +1,132 @@
+@import '_setting';
+@import '_header';
+@import '_footer';
+
+
+
+.theme{
+
+    .theme_portfolio_class{
+        padding: 5% 0 0;
+        @media (max-width:1280px){
+            padding: 8% 0 0;
+        }
+        @media (max-width:800px){
+            padding: 8% 0 0;
+        }
+
+        .theme_portfolio_title{
+            text-align: center;
+            margin-bottom: 72px;
+            @media (max-width:1280px){
+                margin-bottom: 8%;
+            }
+
+            h3{
+                font-size: 36px;
+                color: #c9a063;
+                font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                font-weight: 600;
+                letter-spacing: 2px;
+                @media (max-width:1280px){
+                    font-size: 32px;
+                }
+            }
+
+            h4{
+                font-size: 26px;
+                color: rgba(255,255,255,.2);
+                font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                font-weight: 600;
+                text-transform: uppercase;     
+                letter-spacing: 2px;
+                line-height: 0.8;
+                @media (max-width:1280px){
+                    font-size: 22px;
+                }                        
+            }
+            p{
+                font-size: 20px;    
+                color: #fff; 
+                letter-spacing: 2px;
+                @media (max-width:1280px){
+                    font-size: 16px;
+                }   
+            }
+        }
+
+        .theme_portfolio_slider{
+            width: 100%;
+            padding-bottom: 14%;
+            @media (max-width:600px){
+                padding-bottom: 20%;
+            }
+            @media (max-width:480px){
+                padding-bottom: 28%;
+            }
+
+            .slick-slide{
+                opacity: 0.4;
+
+                &.slick-current{
+                    opacity: 1;
+                }
+            }
+
+            .slick-current + .slick-slide,
+            .slick-slide:has(+ .slick-current){
+                opacity: 0.7;
+            }
+
+            .theme_portfolio_item{
+                padding: 0 10px;
+
+                .theme_portfolio_image{}
+
+                .theme_portfolio_text{
+                    background-color: #c9a063;
+                    padding: 20px 20px 80px;
+
+                    .theme_portfolio_text_info{
+                        font-size: 36px;
+                        line-height: 1.2;
+                        color: #00404b;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        font-weight: 600;
+                        @media (max-width:1280px){
+                            font-size: 32px;
+                        }
+                        @media (max-width:800px){
+                            font-size: 26px;
+                        }
+
+                        span{
+                            display: block;
+                            font-size: 48px;
+                            color: #fff;
+                            letter-spacing: 1px;
+                            font-family: 'Noto Serif Display', serif;
+                            @media (max-width:1280px){
+                                font-size: 46px;
+                            }       
+                            @media (max-width:1280px){
+                                font-size: 38px;
+                            }            
+                        }
+                    }
+
+                    .theme_portfolio_text_location{
+                        display: block;
+                        font-size: 16px;
+                        height: 32px;
+                        color: #00404b;
+                        letter-spacing: 0.5px;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        font-weight: 600;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
