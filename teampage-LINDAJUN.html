@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>明築建設官網-建築團隊</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<!-- <link rel="icon" href="img/logo.ico"> -->
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<link rel="stylesheet" type="text/css" href="css/team.css" />
+	<link rel="stylesheet" type="text/css" href="css/popup_photo.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/wow.min.js"></script>
+</head>
+
+<body>
+	<header id="header"></header>
+
+	<section>
+		<div class="theme">
+
+			<div class="theme_teampage">
+				<div class="theme_teampage_title">
+                    <img src="img/teampage_title_architect.svg" alt="">
+				</div>
+				<div class="theme_teampage_member">
+                    <div class="theme_teampage_member_photo">
+                        <img src="img/teampage_LUWENCHENG.png" alt="">
+                    </div>
+
+                    <div class="theme_teampage_member_text">
+                            <div class="theme_teampage_member_text_position">
+                                <span>建築師</span>林大俊
+                            </div>
+                            <div class="theme_teampage_member_text_story">
+                                    缺資料<br>缺資料
+                            </div>
+                            <div class="theme_teampage_member_text_info">
+                                    缺資料<br>缺資料<br>缺資料
+                            </div>
+                            <div class="theme_teampage_member_text_case">
+                                <div class="theme_teampage_member_text_case_title">業績</div>
+                                <ul class="half">
+                                    <li>缺資料</li>
+                                    <li>缺資料</li>
+                                    <li>缺資料</li>
+                                    <li>缺資料</li>
+                                    <li>缺資料</li>
+                                    <li>缺資料</li>
+                                </ul>
+                                <ul class="half">
+                                    <li>缺資料</li>
+                                    <li>缺資料</li>
+                                    <li>缺資料</li>
+                                    <li>缺資料</li>
+                                    <li>缺資料</li>
+                                    <li>缺資料</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    <div class="theme_teampage_member_case">
+                        <img src="img/teampage_member_case_image1.jpg" alt="">
+                        <img src="img/teampage_member_case_image2.jpg" alt="">
+                        <img src="img/teampage_member_case_image3.jpg" alt="">
+                        <img src="img/teampage_member_case_image4.jpg" alt="">
+                        <img src="img/teampage_member_case_image5.jpg" alt="">
+                        <img src="img/teampage_member_case_image6.jpg" alt="">
+                        <img src="img/teampage_member_case_image7.jpg" alt="">
+                        <img src="img/teampage_member_case_image8.jpg" alt="">
+                        <img src="img/teampage_member_case_image9.jpg" alt="">
+                        <img src="img/teampage_member_case_image10.jpg" alt="">
+                        <img src="img/teampage_member_case_image11.jpg" alt="">
+                    </div>
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<div class="popup popup_photo">
+		<div class="popup_content popup_img">
+            <div class="photo">
+                <img src="img/news_page_photo1.jpg" alt="">
+                <span>2018青年時代(619戶)</span>
+            </div>
+        </div>
+        <div class="icon close">
+            <span class="material-icons">
+                close
+            </span>
+        </div>
+        <div class="icon zoom">
+            <span class="material-icons">
+                zoom_in
+            </span>
+        </div>
+        <div class="arrow">
+            <button class="prev">
+                <a href="#0">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <div class="arrow"></div>
+                </a>
+            </button>
+            <button class="next">
+                <a href="#0">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <div class="arrow"></div>
+                </a>
+            </button>
+        </div>
+	</div>
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		new WOW().init();
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+		
+        $(".theme_teampage_member_case img").click(function() {
+            $(".popup_photo").addClass("is_acted");
+        });
+		
+        $(".popup_photo .close").click(function() {
+            $(".popup_photo").removeClass("is_acted");
+        });
+		
+	})
+
+</script>
+</html>

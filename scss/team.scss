@@ -1,0 +1,180 @@
+@import '_setting';
+@import '_header';
+@import '_footer';
+
+
+
+.theme{
+
+    .theme_team{
+        padding: 3% 0 5%;
+
+        .theme_team_title{
+            margin-bottom: 3%;
+        }
+
+        .theme_team_member{
+
+            .theme_team_slider{
+                padding-bottom: 0%;
+            }
+        }
+    }
+
+    .theme_teampage{
+        background: url(../img/teampage_bg.jpg) center top no-repeat;
+        background-size: cover;
+        padding: 0 0 5%;
+
+        .theme_teampage_title{
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .theme_teampage_member{
+            max-width: 1440px;
+            margin: 0 auto;
+            // outline: 1px solid red;
+            overflow: hidden;
+            // padding-top: 60px;
+            margin-top: -60px;
+            text-align: left;
+            @media (max-width:1420px){
+                text-align: center;
+            }
+            
+            .theme_teampage_member_photo{
+                display: inline-block;
+                vertical-align: middle;
+                
+                img{
+                    width: auto;
+                    @media (max-width:480px){
+                        width: 100%;
+                    }
+                }
+            }
+
+            .theme_teampage_member_text{
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0 40px;
+                letter-spacing: 1px;
+                @media (max-width:1420px){
+                    text-align: left;
+                }
+                @media (max-width:960px){
+                    margin: 5%;
+                }
+
+                .theme_teampage_member_text_position{
+                    font-size: 36px;
+                    line-height: 1.2;
+                    color: #00404b;
+                    font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 4px;
+                    position: relative;
+                    padding-bottom: 16px;
+                    margin-bottom: 16px;
+                    @media (max-width:1280px){
+                        font-size: 22px;
+                    }  
+
+                    span{
+                        display: block;
+                        font-size: 24px;
+                        color: #00404b;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        @media (max-width:1280px){
+                            font-size: 18px;
+                        }
+                    }
+
+                    &:after{
+                        content: "";
+                        width: 22px;
+                        height: 1px;
+                        background: #c9a063;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        display: block;
+                    }
+                }
+
+                .theme_teampage_member_text_story{
+                    font-size: 22px;
+                    color: #00404b;
+                    font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                    font-weight: 600;
+                        
+                }
+
+                .theme_teampage_member_text_info{
+                    margin: 5% 0;
+                }
+                
+                .theme_teampage_member_text_case{
+
+                    .theme_teampage_member_text_case_title{
+                        color: #00404b;
+                    }
+
+                    ul{
+                        overflow: hidden;
+
+                        &.half{
+                            width: 49%;
+                            float: left;
+                            @media (max-width:380px){
+                                width: 100%;
+                            }
+                            
+                        }
+
+                        li{}
+                    }
+                }
+                
+            }
+
+            .theme_teampage_member_case{
+                width: 387px;
+                float: right;
+                overflow: hidden;
+                margin-left: 20px;
+                margin-top: 60px;
+                @media (max-width:1420px){
+                    width: 90%;
+                    float: unset;
+                    margin: 3% auto 0;
+                    text-align: center;
+                }
+                @media (max-width:960px){
+                    margin: 6% auto 0;
+                }
+                
+                img{
+                    width: calc((387px - 6%) / 3);
+                    float: left;
+                    margin: 0 2% 2% 0;
+                    @media (max-width:1420px){
+                        width: 123px;
+                        float: unset;
+                        display: inline-block;
+                        text-align: center;
+
+                    }
+
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

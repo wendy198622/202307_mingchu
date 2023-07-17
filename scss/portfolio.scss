@@ -7,8 +7,9 @@
 .theme{
 
     .theme_portfolio_classic{
-        padding: 5% 0 0;
+        padding: 3% 0 0;
         .theme_portfolio_title{
+            margin-bottom: 5%;
 
             h3{
                 color: #c9a063;
@@ -247,12 +248,12 @@
 
         .theme_portfolio_classic_page_others{
             background: #021f23;
-            padding: 6% 0 0;
+            padding: 5% 0 0;
             overflow: hidden;
 
             .theme_portfolio_classic_page_others_title{
                 text-align: center;
-                margin-bottom: 72px;
+                margin-bottom: 5%;
                 @media (max-width:1280px){
                     margin-bottom: 8%;
                 }
@@ -366,7 +367,7 @@
 
         .theme_portfolio_hotsale_title{
             text-align: center;
-            margin-bottom: 72px;
+            margin-bottom: 3%;
             @media (max-width:1280px){
                 margin-bottom: 8%;
             }
@@ -682,11 +683,11 @@
         background-position: right top;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 3% 0;
+        padding: 3% 0 0;
 
         .theme_portfolio_presale_title{
             text-align: center;
-            margin-bottom: 32px;
+            margin-bottom: 5%;
             @media (max-width:1280px){
                 margin-bottom: 2%;
             }
@@ -718,7 +719,7 @@
         .theme_portfolio_presale_box{
             max-width: 1440px;
             margin: 0 auto 5%;
-            padding: 3% 0;
+            // padding: 3% 0;
             overflow: hidden;
             @media (max-width:1480px){
                 width: 95%;
