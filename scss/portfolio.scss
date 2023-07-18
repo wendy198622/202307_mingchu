@@ -678,6 +678,8 @@
         }
     }
 
+    .theme_portfolio_hotsale_page{}
+
     .theme_portfolio_presale{
         background-image: url(../img/portfolio_presale_bg.jpg);
         background-position: right top;
@@ -957,6 +959,523 @@
             }
         }
     }
+    
+    .theme_portfolio_presale_page{
+        background: url(../img/portfolio_presale_page_bg.jpg) center top repeat-y;
+        background-size: cover;
+        padding: 0;
+
+        .theme_portfolio_presale_page_photo{}
+
+        .theme_portfolio_presale_page_info{
+            width: 100%;
+            max-width: 1440px;
+            margin: -5% auto;
+            background-color: #021f23;
+            padding: 3% 6%;
+            position: relative;
+            @media (max-width:1480px){
+                width: 95%;
+            }
+
+            .theme_portfolio_presale_page_info_inner{
+                overflow: hidden;
+
+                .theme_portfolio_presale_page_info_link{
+                    width: 620px;
+                    float: right;
+                    margin-top: 1%;
+                    @media (max-width:748px){
+                        width: 100%;
+                    }
+
+                    ul{
+                        overflow: hidden;
+                        li{
+                            width: 20%;
+                            float: left;
+                            position: relative;
+                            // outline: 1px solid yellow;
+
+
+                            a{
+                                text-align: center;
+
+                                svg{ 
+                                    width: 56px;
+                                    height: 46px;
+                                    fill:#fff; 
+                                    stroke: #fff; 
+                                    transition: all .3s;
+                                    @media (max-width:420px){
+                                        width: 46px;
+                                        height: 40px;
+                                    }
+                                }
+                                span{
+                                    color: #fff;
+                                    display: block;
+                                    text-align: center;
+                                    font-size: 15px;
+                                    letter-spacing: 1px;
+                                    margin-top: -5px;
+                                    transition: all .3s;
+                                    @media (max-width:420px){
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+
+                            &:hover{
+                                a{
+                                    svg, span{
+                                        fill:#c9a063;; 
+                                        stroke: #c9a063;; 
+                                        color: #c9a063;;
+                                    }
+                                }
+                            }
+                        }
+                        li + li{
+                            &:before{
+                                content: ""; 
+                                background: url("../img/portfolio_hotsale_info_info_linkborder.svg") center top no-repeat;
+                                background-size: auto 100%;
+                                display: block;
+                                width: 5px;
+                                height: 66px;
+                                position: absolute;
+                                top: 0;
+                                left: -1px;
+                            }
+                        }
+                    }
+                }
+
+                .theme_portfolio_presale_page_info_title{
+                    width: calc(100% - 620px);
+                    float: left;
+                    font-size: 36px;
+                    color: #c9a063;
+                    font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                    font-weight: 600;
+                    display: inline-block;
+                    border-left: 7px solid #c9a063;
+                    line-height: 1.4;
+                    letter-spacing: 2px;
+                    padding: 1% 0 1% 30px;
+                    @media (max-width:1280px){
+                        font-size: 32px;
+                    }
+                    @media (max-width:1200px){
+                        width: 100%;
+                        margin-top: 6%;
+                    }
+                    @media (max-width:800px){
+                        font-size: 26px;
+                    }  
+
+                    span{
+                        font-size: 18px;
+                        color: #c9a063;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        display: block;
+                    }
+                }
+
+                .theme_portfolio_presale_page_info_detail{
+                    float: left;
+                    margin: 5% 0 2%;
+                    @media (max-width:1200px){
+                        margin: 5% 0;
+                    }
+
+                    ul{
+                        overflow: hidden;
+
+                        li{
+                            width: calc((100% - 180px) / 3);
+                            float: left;
+                            border-bottom: 1px solid #c9a063;
+                            margin: 0 30px;
+                            color: #fff;
+                            line-height: 2.6;
+                            font-size: 16px;
+                            letter-spacing: 1px;
+                            @media (max-width:1200px){
+                                width: calc((100% - 120px) / 2);
+                            }
+
+                            @media (max-width:800px){
+                                width: calc(100% - 60px);
+                            }
+
+                            span{
+                                width: 72px;
+                                color: #fff;
+                                display: inline-block;
+                                text-align: justify;
+                                text-justify: distribute-all-lines;
+                                text-align-last: justify;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .theme_portfolio_presale_page_unitbox{
+            margin-top: 10%;
+
+            .theme_portfolio_presale_page_unit{
+                padding: 5% 0;
+
+                .theme_portfolio_presale_page_unit_title{
+                    text-align: center;
+                    margin-bottom: 3%;
+                    
+                    h3{
+                        font-size: 36px;
+                        color: #c9a063;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        text-transform:uppercase;
+                        line-height: 1;
+                    }
+    
+                    h4{
+                        font-size: 36px;
+                        color: #000;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                    }
+
+                    p{
+                        font-size: 18px;
+                        color: #000;
+                        line-height: 1;
+                        letter-spacing: 2px;
+                        margin-top: 30px;
+                    }
+                }
+                
+                &.unit1{
+                    max-width: 1440px;
+                    margin: 0 auto;
+                    @media (max-width:1480px){
+                        width: 95%;
+                    }
+                }
+
+                &.unit2{
+                    max-width: 1440px;
+                    margin: 0 auto;
+                    @media (max-width:1480px){
+                        width: 95%;
+                    }
+
+                    .theme_portfolio_presale_page_unit_item{
+                        padding: 0 2%;;
+                    }
+                }
+
+                &.unit3{}
+
+            }
+        }
+
+        .theme_portfolio_presale_page_reservation{
+            background: #fff;
+            padding: 3% 0;
+
+            .theme_portfolio_presale_page_reservation_title{
+                text-align: center;
+                margin-bottom: 3%;
+                
+                h3{
+                    font-size: 36px;
+                    color: #c9a063;
+                    font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    text-transform:uppercase;
+                    line-height: 1;
+                }
+
+                h4{
+                    font-size: 36px;
+                    color: #000;
+                    font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                }
+
+                p{
+                    font-size: 18px;
+                    color: #000;
+                    line-height: 1.6;
+                    letter-spacing: 2px;
+                    margin-top: 30px;
+                }
+            }
+
+            
+            .theme_portfolio_presale_page_reservation_form{
+                width: 1120px;
+                margin: 0 auto;
+                padding: 20px 40px 40px;
+                overflow: hidden;
+                @media (max-width:1480px){
+                width: calc(1120 / 1440 * 100%);
+                }
+                @media (max-width:960px){
+                    width: 100%;
+                    background-size: 100% auto;
+                }
+                
+                .item{
+                    width: 100%;
+                    // border-bottom: 1px solid #c9a063;
+                    margin-top: 20px;
+                    position: relative;
+                    overflow: hidden;
+                    float: left;
+
+                    &.half{
+                        width: 45%;
+                        @media (max-width:960px){
+                            width: 100%;
+                        }
+
+                        &:nth-child(odd){
+                            margin-right: 10%;
+                            @media (max-width:960px){
+                                margin-right: 0%;
+                            }
+                        }
+                    }
+
+                    p{
+                        font-size: 15px;
+                        text-align: center;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        letter-spacing: 1px;
+
+                        a{
+                            display: inline-block;
+                            text-decoration: underline;
+                            margin: 0 5px;
+                            color: #c9a063;
+                            font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        }
+                    }
+
+                    label{
+                        font-size: 14px;
+                        line-height: 1.2;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        color: #c9a063;
+                        letter-spacing: 1px;
+                        display: block;
+
+                        span{
+                            width: 94px;
+                            font-size: 20px;
+                            color: #000;
+                            font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                            margin: 0 10px;
+                            display: inline-block;
+                            text-align: justify;
+                            text-justify: distribute-all-lines;
+                            text-align-last: justify;
+                            @media (max-width:1280px){
+                                font-size: 16px;
+                            }             
+                            @media (max-width:600px){
+                                width: 80px;
+                            }   
+
+                            &.nowidth{
+                                width: 300px;
+                                @media (max-width:1020px) and (min-width:960px){
+                                    width: 280px;
+                                }
+                                @media (max-width:540px){
+                                    width: auto;
+                                }
+                            }      
+                        }
+                    }
+
+                    input[type="text"]{
+                        width: calc(100% - 18px);
+                        font-size: 20px;
+                        line-height: 2;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        background: transparent;
+                        padding: 0;
+                        color: #9f8268;
+                        margin-left: 18px;
+                        border-bottom: 1px solid #c9a063;
+
+                        &:focus{
+                            outline: 0;
+                        }
+                    }
+
+                    select{
+                        width: calc(100% - 18px);
+                        height: 40px;
+                        padding: 0;
+                        border: 0;
+                        background: transparent;
+                        outline: 0;
+                        font-size: 20px;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        color: #9f8268;
+                        margin-left: 18px;
+                        border-bottom: 1px solid #c9a063;
+                        @media (max-width:1280px){
+                            font-size: 16px;
+                        }             
+                        
+                        option{
+                            font-size: 20px;
+                            font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                            @media (max-width:1280px){
+                                font-size: 16px;
+                            }             
+
+                        }
+                    }
+
+                    textarea{
+                        width: calc(100% - 18px);
+                        background-color: transparent;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        padding: 0;
+                        border: 0;
+                        font-size: 20px;
+                        height: 76px;
+                        resize: none;
+                        color: #9f8268;
+                        margin-left: 18px;
+                        border-bottom: 1px solid #c9a063;
+                        @media (max-width:1280px){
+                            font-size: 16px;
+                        }             
+
+                        &:checked, 
+                        &:focus{
+                            outline: 0;
+                        }
+                    }
+
+                    button{
+                        width: 48%;
+                        margin: 0 auto;
+                        background-color: #c9a063;
+                        display: block;
+                        position: relative;
+                        border: 5px solid #c9a063;
+                        transition: all .5s;
+                        @media (max-width:800px){
+                            width: 324px;
+                        }
+                        @media (max-width:426px){
+                            width: 100%;
+                        }
+
+                        &:before, &:after {
+                            position: absolute;
+                            content: "";
+                            right: 0;
+                            top: 0;
+                            background: #fff;
+                            transition: all 0.3s ease;
+                        }
+                        &:before {
+                            height: 0%;
+                            width: 2px;
+                        }
+                        &:after {
+                            width: 0%;
+                            height: 2px;
+                        }
+
+                        span{
+                            display: block;
+                            // position: relative;
+                            width: 100%;
+                            height: 100%;
+                            color: #fff;
+                            font-size: 16px;
+                            line-height: 2;
+                            font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+
+                            &:before, &:after {
+                                position: absolute;
+                                content: "";
+                                left: 0;
+                                bottom: 0;
+                                background: #fff;
+                                transition: all 0.3s ease;
+                            }
+                            &:before {
+                                width: 2px;
+                                height: 0%;
+                            }
+                            &:after {
+                                width: 0%;
+                                height: 2px;
+                            }
+                        }
+
+                        &:hover{
+                            cursor: pointer;
+                            // background: rgba(255,255,255,.3);
+                            box-shadow: none;
+                            &:before {
+                                height: 100%;
+                            }
+                            &:after {
+                                width: 100%;
+                            }
+                            span{
+                                // color: #c9a063;
+                                &:before {
+                                    height: 100%;
+                                }
+                                &:after {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                    .code{
+                        position: absolute;
+                        width: 20%;
+                        right: 0;
+                        bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        .theme_portfolio_presale_page_map{
+            max-width: 1440px;
+            margin: 3% auto -4px;
+
+            iframe{
+                width: 100%;
+                height: 600px;
+            }
+        }
+    }
+
 }
 
 button{
