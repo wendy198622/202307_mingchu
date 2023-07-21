@@ -1,0 +1,218 @@
+@import '_setting';
+@import '_header';
+@import '_footer';
+
+
+
+.theme{
+    background: url(../img/service_bg.jpg) center top no-repeat;
+    background-size: cover;
+
+    .theme_service{
+        padding: 6% 0;
+        overflow: hidden;
+
+        .theme_service_title{
+            text-align: center;
+            margin-bottom: 72px;
+            @media (max-width:1280px){
+                margin-bottom: 8%;
+            }
+
+            h3{
+                font-size: 36px;
+                color: #fff;
+                font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                font-weight: 600;
+                letter-spacing: 2px;
+                @media (max-width:1280px){
+                    font-size: 32px;
+                }
+            }
+
+            h4{
+                font-size: 26px;
+                color: rgba(255,255,255,.1);
+                font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                font-weight: 600;
+                text-transform: uppercase;  
+                letter-spacing: 2px;
+                @media (max-width:1280px){
+                    font-size: 22px;
+                }                           
+            }
+        }
+
+        .theme_service_content{
+            max-width: 1440px;
+            margin: 0 auto;
+            @media (max-width:1480px){
+                width: 95%;
+            }
+
+            ul{
+                overflow: hidden;
+
+                li{
+                    width: calc(100% / 6);
+                    float: left;
+                    text-align: center;
+                    background: #00404b;
+                    padding-bottom: 72px;
+                    border-right: 1px solid rgba(201,160,99,.5);
+
+                    &:last-child{
+                        border-right: 0;
+                    }
+
+                    @media (max-width:960px){
+                        width: calc(100% / 2);
+                        border-bottom: 1px solid rgba(201,160,99,.5);
+                        
+                        &:nth-child(2n){
+                            border-right: 0;
+                        }
+                    }
+
+                    @media (max-width:540px){
+                        width: 100%;
+                        border-right: 0;
+                        padding-bottom: 36px;
+                    }
+
+                    img{
+
+                        @media (max-width:960px){
+                            width: 50%;
+                            float: left;
+                        }
+                    }
+
+                    .theme_service_content_title{
+                        font-size: 36px;
+                        line-height: 2;
+                        color: #c9a063;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        margin: 36px 0; 
+                        letter-spacing: 6px;
+                        position: relative;
+                        @media (max-width:1280px){
+                            font-size: 32px;
+                        }
+                        @media (max-width:960px){
+                            width: 50%;
+                            float: right;
+                        }
+
+                        &:before{
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 7px;
+                            background: url(../img/service_titleborder.svg) center center no-repeat;
+                            background-size: contain;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        &:after{
+                            content: "";
+                            display: block;
+                            width: 100%;
+                            height: 7px;
+                            background: url(../img/service_titleborder.svg) center center no-repeat;
+                            background-size: contain;
+                            transform: scaleY(-1);
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                        }
+                    }
+
+                    .theme_service_content_subtitle{
+                        font-size: 22px;
+                        color: #fff;
+                        font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                        font-weight: 600;
+                        text-transform: uppercase;  
+                        letter-spacing: 2px;
+                        @media (max-width:1280px){
+                            font-size: 18px;
+                        }  
+                        @media (max-width:960px){
+                            width: 50%;
+                            float: right;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .theme_repair{
+        background: url(../img/repair_bg.png) center top no-repeat;
+        background-size: cover;
+        padding: 6% 0;
+        overflow: hidden;
+
+        .theme_repair_title{
+            text-align: center;
+            margin-bottom: 72px;
+            @media (max-width:1280px){
+                margin-bottom: 8%;
+            }
+
+            h3{
+                font-size: 36px;
+                color: #fff;
+                font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                font-weight: 600;
+                letter-spacing: 2px;
+                @media (max-width:1280px){
+                    font-size: 32px;
+                }
+            }
+
+            h4{
+                font-size: 26px;
+                color: rgba(255,255,255,.1);
+                font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                font-weight: 600;
+                text-transform: uppercase;  
+                letter-spacing: 2px;
+                @media (max-width:1280px){
+                    font-size: 22px;
+                }                           
+            }
+        }
+
+        .theme_repair_content{
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .theme_repair_btn{
+            max-width: 1440px;
+            margin: 10px auto;
+
+            a{
+                width: 48%;
+                float: left;
+                margin: 1%;
+                text-align: center;
+                background-color: #c9a063;
+                color: #fff;
+                font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
+                font-weight: 600;
+                line-height: 2;
+                padding: 10px;
+                font-size: 20px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
