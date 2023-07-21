@@ -960,14 +960,17 @@
         }
     }
     
-    .theme_portfolio_presale_page{
+    .theme_portfolio_presale_page,
+    .theme_portfolio_hotsale_page{
         background: url(../img/portfolio_presale_page_bg.jpg) center top repeat-y;
         background-size: cover;
         padding: 0;
 
-        .theme_portfolio_presale_page_photo{}
+        .theme_portfolio_presale_page_photo,
+        .theme_portfolio_hotsale_page_photo{}
 
-        .theme_portfolio_presale_page_info{
+        .theme_portfolio_presale_page_info,
+        .theme_portfolio_hotsale_page_info{
             width: 100%;
             max-width: 1440px;
             margin: -5% auto;
@@ -978,10 +981,12 @@
                 width: 95%;
             }
 
-            .theme_portfolio_presale_page_info_inner{
+            .theme_portfolio_presale_page_info_inner,
+            .theme_portfolio_hotsale_page_info_inner{
                 overflow: hidden;
 
-                .theme_portfolio_presale_page_info_link{
+                .theme_portfolio_presale_page_info_link,
+                .theme_portfolio_hotsale_page_info_link{
                     width: 620px;
                     float: right;
                     margin-top: 1%;
@@ -1052,7 +1057,8 @@
                     }
                 }
 
-                .theme_portfolio_presale_page_info_title{
+                .theme_portfolio_presale_page_info_title,
+                .theme_portfolio_hotsale_page_info_title{
                     width: calc(100% - 620px);
                     float: left;
                     font-size: 36px;
@@ -1083,7 +1089,8 @@
                     }
                 }
 
-                .theme_portfolio_presale_page_info_detail{
+                .theme_portfolio_presale_page_info_detail,
+                .theme_portfolio_hotsale_page_info_detail{
                     float: left;
                     margin: 5% 0 2%;
                     @media (max-width:1200px){
@@ -1124,13 +1131,16 @@
             }
         }
 
-        .theme_portfolio_presale_page_unitbox{
+        .theme_portfolio_presale_page_unitbox,
+        .theme_portfolio_hotsale_page_unitbox{
             margin-top: 10%;
 
-            .theme_portfolio_presale_page_unit{
+            .theme_portfolio_presale_page_unit,
+            .theme_portfolio_hotsale_page_unit{
                 padding: 5% 0;
 
-                .theme_portfolio_presale_page_unit_title{
+                .theme_portfolio_presale_page_unit_title,
+                .theme_portfolio_hotsale_page_unit_title{
                     text-align: center;
                     margin-bottom: 3%;
                     
@@ -1176,7 +1186,8 @@
                         width: 95%;
                     }
 
-                    .theme_portfolio_presale_page_unit_item{
+                    .theme_portfolio_presale_page_unit_item,
+                    .theme_portfolio_hotsale_page_unit_item{
                         padding: 0 2%;;
                     }
                 }
@@ -1186,11 +1197,13 @@
             }
         }
 
-        .theme_portfolio_presale_page_reservation{
+        .theme_portfolio_presale_page_reservation,
+        .theme_portfolio_hotsale_page_reservation{
             background: #fff;
             padding: 3% 0;
 
-            .theme_portfolio_presale_page_reservation_title{
+            .theme_portfolio_presale_page_reservation_title,
+            .theme_portfolio_hotsale_page_reservation_title{
                 text-align: center;
                 margin-bottom: 3%;
                 
@@ -1222,7 +1235,8 @@
             }
 
             
-            .theme_portfolio_presale_page_reservation_form{
+            .theme_portfolio_presale_page_reservation_form,
+            .theme_portfolio_hotsale_page_reservation_form{
                 width: 1120px;
                 margin: 0 auto;
                 padding: 20px 40px 40px;
@@ -1465,7 +1479,8 @@
             }
         }
 
-        .theme_portfolio_presale_page_map{
+        .theme_portfolio_presale_page_map,
+        .theme_portfolio_hotsale_page_map{
             max-width: 1440px;
             margin: 3% auto -4px;
 

@@ -1765,13 +1765,17 @@ footer #goTop:hover {
   }
 }
 
-.theme .theme_portfolio_presale_page {
+.theme .theme_portfolio_presale_page,
+.theme .theme_portfolio_hotsale_page {
   background: url(../img/portfolio_presale_page_bg.jpg) center top repeat-y;
   background-size: cover;
   padding: 0;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info {
   width: 100%;
   max-width: 1440px;
   margin: -5% auto;
@@ -1781,42 +1785,142 @@ footer #goTop:hover {
 }
 
 @media (max-width: 1480px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info {
     width: 95%;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner {
   overflow: hidden;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link {
   width: 620px;
   float: right;
   margin-top: 1%;
 }
 
 @media (max-width: 748px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link {
     width: 100%;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul {
   overflow: hidden;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li {
   width: 20%;
   float: left;
   position: relative;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a {
   text-align: center;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg {
   width: 56px;
   height: 46px;
   fill: #fff;
@@ -1826,13 +1930,43 @@ footer #goTop:hover {
 }
 
 @media (max-width: 420px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a svg,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a svg {
     width: 46px;
     height: 40px;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span {
   color: #fff;
   display: block;
   text-align: center;
@@ -1844,18 +1978,78 @@ footer #goTop:hover {
 }
 
 @media (max-width: 420px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li a span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li a span {
     font-size: 12px;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a svg, .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a span {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a svg, .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li:hover a span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a svg,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li:hover a span {
   fill: #c9a063;
   stroke: #c9a063;
   color: #c9a063;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li + li:before {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li + li:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li + li:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li + li:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li + li:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li + li:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li + li:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li + li:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li + li:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li + li:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li + li:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li + li:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li + li:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_link ul li + li:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li + li:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_link ul li + li:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_link ul li + li:before {
   content: "";
   background: url("../img/portfolio_hotsale_info_info_linkborder.svg") center top no-repeat;
   background-size: auto 100%;
@@ -1867,7 +2061,22 @@ footer #goTop:hover {
   left: -1px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title {
   width: calc(100% - 620px);
   float: left;
   font-size: 36px;
@@ -1882,47 +2091,167 @@ footer #goTop:hover {
 }
 
 @media (max-width: 1280px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title {
     font-size: 32px;
   }
 }
 
 @media (max-width: 1200px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title {
     width: 100%;
     margin-top: 6%;
   }
 }
 
 @media (max-width: 800px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title {
     font-size: 26px;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title span {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_title span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_title span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_title span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_title span {
   font-size: 18px;
   color: #c9a063;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
   display: block;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail {
   float: left;
   margin: 5% 0 2%;
 }
 
 @media (max-width: 1200px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail {
     margin: 5% 0;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul {
   overflow: hidden;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li {
   width: calc((100% - 180px) / 3);
   float: left;
   border-bottom: 1px solid #c9a063;
@@ -1934,18 +2263,63 @@ footer #goTop:hover {
 }
 
 @media (max-width: 1200px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li {
     width: calc((100% - 120px) / 2);
   }
 }
 
 @media (max-width: 800px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li {
     width: calc(100% - 60px);
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li span {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_presale_page_info_detail ul li span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_presale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_presale_page_info_detail ul li span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_info .theme_portfolio_hotsale_page_info_inner .theme_portfolio_hotsale_page_info_detail ul li span {
   width: 72px;
   color: #fff;
   display: inline-block;
@@ -1954,20 +2328,60 @@ footer #goTop:hover {
   text-align-last: justify;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox {
   margin-top: 10%;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit {
   padding: 5% 0;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title {
   text-align: center;
   margin-bottom: 3%;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title h3 {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title h3,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title h3,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title h3,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title h3,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title h3,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title h3,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title h3,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title h3 {
   font-size: 36px;
   color: #c9a063;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
@@ -1977,7 +2391,22 @@ footer #goTop:hover {
   line-height: 1;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title h4 {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title h4,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title h4,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title h4,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title h4,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title h4,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title h4,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title h4,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title h4 {
   font-size: 36px;
   color: #000;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
@@ -1985,7 +2414,22 @@ footer #goTop:hover {
   letter-spacing: 2px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title p {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title p,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title p,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title p,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title p,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title p,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title p,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title p,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_presale_page_unit_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit .theme_portfolio_hotsale_page_unit_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_presale_page_unit_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit .theme_portfolio_hotsale_page_unit_title p {
   font-size: 18px;
   color: #000;
   line-height: 1;
@@ -1993,43 +2437,103 @@ footer #goTop:hover {
   margin-top: 30px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit1 {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit1,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit1,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit1,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit1,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit1,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit1,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit1,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit1 {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 @media (max-width: 1480px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit1 {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit1,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit1,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit1,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit1,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit1,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit1,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit1,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit1 {
     width: 95%;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2 {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit2,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit2,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2 {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 @media (max-width: 1480px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2 {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit2,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit2,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2 {
     width: 95%;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2 .theme_portfolio_presale_page_unit_item {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2 .theme_portfolio_presale_page_unit_item,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2 .theme_portfolio_hotsale_page_unit_item,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2 .theme_portfolio_presale_page_unit_item,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2 .theme_portfolio_hotsale_page_unit_item,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit2 .theme_portfolio_presale_page_unit_item,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit2 .theme_portfolio_hotsale_page_unit_item,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2 .theme_portfolio_presale_page_unit_item,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2 .theme_portfolio_hotsale_page_unit_item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2 .theme_portfolio_presale_page_unit_item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_presale_page_unit.unit2 .theme_portfolio_hotsale_page_unit_item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2 .theme_portfolio_presale_page_unit_item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2 .theme_portfolio_hotsale_page_unit_item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit2 .theme_portfolio_presale_page_unit_item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_presale_page_unit.unit2 .theme_portfolio_hotsale_page_unit_item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2 .theme_portfolio_presale_page_unit_item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_unitbox .theme_portfolio_hotsale_page_unit.unit2 .theme_portfolio_hotsale_page_unit_item {
   padding: 0 2%;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation {
   background: #fff;
   padding: 3% 0;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_title,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_title,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_title {
   text-align: center;
   margin-bottom: 3%;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title h3 {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title h3,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_title h3,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_title h3,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_title h3,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_title h3 {
   font-size: 36px;
   color: #c9a063;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
@@ -2039,7 +2543,14 @@ footer #goTop:hover {
   line-height: 1;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title h4 {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title h4,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_title h4,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_title h4,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_title h4,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_title h4 {
   font-size: 36px;
   color: #000;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
@@ -2047,7 +2558,14 @@ footer #goTop:hover {
   letter-spacing: 2px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title p {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title p,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_title p,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_title p,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_title p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_title p {
   font-size: 18px;
   color: #000;
   line-height: 1.6;
@@ -2055,7 +2573,14 @@ footer #goTop:hover {
   margin-top: 30px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form {
   width: 1120px;
   margin: 0 auto;
   padding: 20px 40px 40px;
@@ -2063,19 +2588,40 @@ footer #goTop:hover {
 }
 
 @media (max-width: 1480px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form {
     width: calc(1120 / 1440 * 100%);
   }
 }
 
 @media (max-width: 960px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form {
     width: 100%;
     background-size: 100% auto;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item {
   width: 100%;
   margin-top: 20px;
   position: relative;
@@ -2083,34 +2629,76 @@ footer #goTop:hover {
   float: left;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half {
   width: 45%;
 }
 
 @media (max-width: 960px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half {
     width: 100%;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half:nth-child(odd) {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half:nth-child(odd),
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half:nth-child(odd),
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half:nth-child(odd),
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half:nth-child(odd),
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half:nth-child(odd),
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half:nth-child(odd),
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half:nth-child(odd),
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half:nth-child(odd) {
   margin-right: 10%;
 }
 
 @media (max-width: 960px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half:nth-child(odd) {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half:nth-child(odd),
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half:nth-child(odd),
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half:nth-child(odd),
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half:nth-child(odd),
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half:nth-child(odd),
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half:nth-child(odd),
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item.half:nth-child(odd),
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item.half:nth-child(odd) {
     margin-right: 0%;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item p {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item p,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item p,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item p,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item p,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item p {
   font-size: 15px;
   text-align: center;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
   letter-spacing: 1px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item p a {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item p a,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item p a,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item p a,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item p a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item p a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item p a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item p a,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item p a {
   display: inline-block;
   text-decoration: underline;
   margin: 0 5px;
@@ -2118,7 +2706,14 @@ footer #goTop:hover {
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label {
   font-size: 14px;
   line-height: 1.2;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
@@ -2127,7 +2722,14 @@ footer #goTop:hover {
   display: block;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span {
   width: 94px;
   font-size: 20px;
   color: #000;
@@ -2140,34 +2742,76 @@ footer #goTop:hover {
 }
 
 @media (max-width: 1280px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span {
     font-size: 16px;
   }
 }
 
 @media (max-width: 600px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span {
     width: 80px;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth {
   width: 300px;
 }
 
 @media (max-width: 1020px) and (min-width: 960px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth {
     width: 280px;
   }
 }
 
 @media (max-width: 540px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item label span.nowidth,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item label span.nowidth {
     width: auto;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item input[type="text"] {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item input[type="text"],
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item input[type="text"],
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item input[type="text"],
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item input[type="text"],
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item input[type="text"],
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item input[type="text"],
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item input[type="text"],
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item input[type="text"] {
   width: calc(100% - 18px);
   font-size: 20px;
   line-height: 2;
@@ -2179,11 +2823,25 @@ footer #goTop:hover {
   border-bottom: 1px solid #c9a063;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item input[type="text"]:focus {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item input[type="text"]:focus,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item input[type="text"]:focus,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item input[type="text"]:focus,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item input[type="text"]:focus,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item input[type="text"]:focus,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item input[type="text"]:focus,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item input[type="text"]:focus,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item input[type="text"]:focus {
   outline: 0;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item select,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item select,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select {
   width: calc(100% - 18px);
   height: 40px;
   padding: 0;
@@ -2198,23 +2856,51 @@ footer #goTop:hover {
 }
 
 @media (max-width: 1280px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item select,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item select,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select {
     font-size: 16px;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select option {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select option,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select option,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item select option,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select option,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select option,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select option,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item select option,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select option {
   font-size: 20px;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
 }
 
 @media (max-width: 1280px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select option {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select option,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select option,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item select option,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select option,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item select option,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select option,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item select option,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item select option {
     font-size: 16px;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea {
   width: calc(100% - 18px);
   background-color: transparent;
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
@@ -2229,16 +2915,44 @@ footer #goTop:hover {
 }
 
 @media (max-width: 1280px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea {
     font-size: 16px;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea:checked, .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea:focus {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea:checked, .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea:focus,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea:checked,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea:focus,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea:checked,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea:focus,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea:checked,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea:focus,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea:checked,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea:focus,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea:checked,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea:focus,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea:checked,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item textarea:focus,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea:checked,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item textarea:focus {
   outline: 0;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button {
   width: 48%;
   margin: 0 auto;
   background-color: #c9a063;
@@ -2250,18 +2964,46 @@ footer #goTop:hover {
 }
 
 @media (max-width: 800px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button {
     width: 324px;
   }
 }
 
 @media (max-width: 426px) {
-  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button {
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+  .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+  .theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button,
+  .theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button {
     width: 100%;
   }
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:before, .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:after {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:before, .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:after {
   position: absolute;
   content: "";
   right: 0;
@@ -2271,17 +3013,38 @@ footer #goTop:hover {
   transition: all 0.3s ease;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:before {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:before {
   height: 0%;
   width: 2px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:after {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:after {
   width: 0%;
   height: 2px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span {
   display: block;
   width: 100%;
   height: 100%;
@@ -2291,7 +3054,21 @@ footer #goTop:hover {
   font-family: 'Noto Serif Display', 'Noto Serif TC', serif;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:before, .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:after {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:before, .theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:after {
   position: absolute;
   content: "";
   left: 0;
@@ -2301,51 +3078,113 @@ footer #goTop:hover {
   transition: all 0.3s ease;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:before {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:before {
   width: 2px;
   height: 0%;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:after {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button span:after {
   width: 0%;
   height: 2px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover {
   cursor: pointer;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover:before {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover:before {
   height: 100%;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover:after {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover:after {
   width: 100%;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover span:before {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover span:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover span:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover span:before,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover span:before,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover span:before {
   height: 100%;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover span:after {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover span:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover span:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover span:after,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item button:hover span:after,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item button:hover span:after {
   width: 100%;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item .code {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item .code,
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item .code,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item .code,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item .code,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_presale_page_reservation_form .item .code,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item .code,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_presale_page_reservation_form .item .code,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_reservation .theme_portfolio_hotsale_page_reservation_form .item .code {
   position: absolute;
   width: 20%;
   right: 0;
   bottom: 5px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_map {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_map,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_map,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_map,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_map {
   max-width: 1440px;
   margin: 3% auto -4px;
 }
 
-.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_map iframe {
+.theme .theme_portfolio_presale_page .theme_portfolio_presale_page_map iframe,
+.theme .theme_portfolio_presale_page .theme_portfolio_hotsale_page_map iframe,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_presale_page_map iframe,
+.theme .theme_portfolio_hotsale_page .theme_portfolio_hotsale_page_map iframe {
   width: 100%;
   height: 600px;
 }
