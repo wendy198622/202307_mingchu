@@ -2352,4 +2352,57 @@ footer #goTop:hover {
   opacity: 0;
   visibility: hidden;
 }
+
+.slick-slider button.slick-prev {
+  left: -50px;
+}
+
+.slick-slider button.slick-prev:before {
+  content: '\e5de';
+}
+
+.slick-slider button.slick-next {
+  right: -50px;
+}
+
+.slick-slider button.slick-next:before {
+  content: '\e5df';
+}
+
+.slick-slider button.slick-prev, .slick-slider button.slick-next {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  z-index: 5;
+}
+
+.slick-slider button.slick-prev:before, .slick-slider button.slick-next:before {
+  font-family: 'Material Icons';
+  color: #000;
+  font-size: 60px;
+}
+
+.slider3.slick-slider button.slick-prev {
+  left: 50%;
+  margin-left: -770px;
+}
+
+@media (max-width: 1480px) {
+  .slider3.slick-slider button.slick-prev {
+    left: -10px;
+    margin-left: 0;
+  }
+}
+
+.slider3.slick-slider button.slick-next {
+  right: 50%;
+  margin-right: -770px;
+}
+
+@media (max-width: 1480px) {
+  .slider3.slick-slider button.slick-next {
+    right: -10px;
+    margin-right: 0;
+  }
+}
 /*# sourceMappingURL=index.css.map */

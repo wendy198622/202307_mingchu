@@ -34,10 +34,19 @@
 			<div class="theme_teampage">
 				<div class="theme_teampage_title">
                     <img src="img/teampage_title_architect.svg" alt="">
+                    <a href="team.html">
+                        <svg class="svg1" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 50">
+                            <path class="st1" d="M25.5,9.3c0,0.9,0,1.8,0,2.8c0.1,0,0.2,0,0.4,0c2.5,0,5,0,7.5,0c5.7,0,11,3.6,13.1,8.9c0.8,2.2,1.2,4.4,1,6.7
+                            c-0.6,6-4.8,10.8-10.4,12.4c-1.2,0.3-2.4,0.5-3.7,0.5c0-2.4,0-4.7,0-7c0.6-0.1,1.3-0.2,1.9-0.3c2.9-0.8,4.9-3.2,5.3-6.1
+                            c0.5-3.7-2.2-7.3-5.9-7.9c-0.5-0.1-1-0.1-1.4-0.1c-2.4,0-4.8,0-7.2,0c-0.1,0-0.2,0-0.4,0c0,0.9,0,1.8,0,2.8c-3-2.1-6-4.2-9-6.3
+                            c0.7-0.5,1.4-1,2.1-1.5c2-1.6,4.2-3.2,6.4-4.8C25.3,9.4,25.4,9.3,25.5,9.3L25.5,9.3z" />
+                        </svg>
+                        <span>回列表</span>
+                    </a>
 				</div>
 				<div class="theme_teampage_member">
                     <div class="theme_teampage_member_photo">
-                        <img src="img/teampage_LUWENCHENG.png" alt="">
+                        <img src="img/teampage_LINDAJUN.png" alt="">
                     </div>
 
                     <div class="theme_teampage_member_text">
@@ -72,17 +81,17 @@
                         </div>
 
                     <div class="theme_teampage_member_case">
-                        <img src="img/teampage_member_case_image1.jpg" alt="">
-                        <img src="img/teampage_member_case_image2.jpg" alt="">
-                        <img src="img/teampage_member_case_image3.jpg" alt="">
-                        <img src="img/teampage_member_case_image4.jpg" alt="">
-                        <img src="img/teampage_member_case_image5.jpg" alt="">
-                        <img src="img/teampage_member_case_image6.jpg" alt="">
-                        <img src="img/teampage_member_case_image7.jpg" alt="">
-                        <img src="img/teampage_member_case_image8.jpg" alt="">
-                        <img src="img/teampage_member_case_image9.jpg" alt="">
-                        <img src="img/teampage_member_case_image10.jpg" alt="">
-                        <img src="img/teampage_member_case_image11.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image1.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image2.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image3.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image4.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image5.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image6.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image7.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image8.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image9.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image10.jpg" alt="">
+                        <img class="active_popup" src="img/teampage_member_case_image11.jpg" alt="">
                     </div>
                 </div>
 			</div>
@@ -134,7 +143,7 @@
 		$('#header').load('page/header.html');
 		$('#footer').load('page/footer.html');
 		
-        $(".theme_teampage_member_case img").click(function() {
+        $(".active_popup").click(function() {
             $(".popup_photo").addClass("is_acted");
         });
 		
