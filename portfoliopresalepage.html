@@ -363,7 +363,7 @@
             // nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
         });
 
-        // 點擊 theme_portfolio_hotsale_page_unit_item 時顯示相應的圖片
+        // 點擊 theme_portfolio_presale_page_unit_item 時顯示相應的圖片
         $('.slider1 .theme_portfolio_presale_page_unit_item').on('click', function() {
             const $imgSrc = $(this).find('img').attr('src');
             const $imgDescription = $(this).find('img').attr('alt');
@@ -451,6 +451,38 @@
         });
 		
 	})
+
+
+
+    // 顯示指定索引的圖片
+    function showImage(index, sliderClass) {
+        const $unitItems = $(sliderClass + ' .theme_portfolio_presale_page_unit_item');
+        const $imgSrc = $unitItems.eq(index).find('img').attr('src');
+        const $imgDescription = $unitItems.eq(index).find('img').attr('alt');
+
+        $('.popup_img img').attr('src', $imgSrc);
+        $('.popup_img span').text($imgDescription);
+    }
+    // 顯示前一張圖片
+    function showPrevImage(sliderClass) {
+        const $currentImage = $('.popup_img img').attr('src');
+        const $unitItems = $(sliderClass + ' .theme_portfolio_presale_page_unit_item');
+        const index = $unitItems.index($unitItems.find(`img[src="${$currentImage}"]`).closest('.theme_portfolio_presale_page_unit_item'));
+
+        const prevIndex = (index - 1 + $unitItems.length) % $unitItems.length;
+        showImage(prevIndex, sliderClass);
+    }
+
+    // 顯示後一張圖片
+    function showNextImage(sliderClass) {
+        const $currentImage = $('.popup_img img').attr('src');
+        const $unitItems = $(sliderClass + ' .theme_portfolio_presale_page_unit_item');
+        const index = $unitItems.index($unitItems.find(`img[src="${$currentImage}"]`).closest('.theme_portfolio_presale_page_unit_item'));
+
+        const nextIndex = (index + 1) % $unitItems.length;
+        console.log(nextIndex)
+        showImage(nextIndex, sliderClass);
+    }
 
 </script>
 </html>
