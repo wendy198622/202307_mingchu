@@ -270,11 +270,35 @@
 
 </body>
 <script>
+
 	$(document).ready(function () {
 		new WOW().init();
 
 		$('#header').load('page/header.html');
 		$('#footer').load('page/footer.html');
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const consultationType = urlParams.get('type');
+		let  index = 0;
+		
+		// //根據不同的查詢參數值進行不同的處理
+		switch (consultationType) {
+            case 'houseViewing':
+			index = 0;
+                break;
+            case 'afterSales':
+			index = 1;
+                break;
+            case 'landDevelopment':
+			index = 2;
+                break;
+            case 'recruitment':
+			index = 3;
+                break;
+            default:
+			index = 0;
+                break;
+        }
 
 		$('.theme_consultation_slider').slick({
 			dots: false,
@@ -283,6 +307,7 @@
   			// fade: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			initialSlide: index
 		});
 		
 		$('.theme_consultation_nav').slick({
@@ -292,6 +317,8 @@
 			dots: false,
 			focusOnSelect: true
 		});
+
+		handleInitialSlide(index);
 
 		$(".theme_consultation").on("click", ".slick-slide:nth-child(1)", function() {
 			$(this).closest(".theme_consultation").css("background-image","url(img/consultation_bg1.jpg)");
@@ -308,8 +335,9 @@
 		$(".theme_consultation").on("click", ".slick-slide:nth-child(4)", function() {
 			$(this).closest(".theme_consultation").css("background-image","url(img/consultation_bg4.jpg)");
 		});
-	
-		
+
+
+
 		$(".theme_consultation_form button").click(function() {
 			$(".popup_send").addClass("is_acted");
 
@@ -320,5 +348,31 @@
 	
 	});
 
+	function handleInitialSlide(currentSlide) {
+			// 在這裡根據初始輪播頁面執行相應的動作
+			$('.theme_consultation_link .slick-slide').removeClass('slick-current');
+			switch (currentSlide) {
+				case 0:
+					//$(this).closest(".theme_consultation").css("background-image","url(img/consultation_bg1.jpg)");
+					$(".theme_consultation").css("background-image", "url(img/consultation_bg1.jpg)");
+					$('.theme_consultation_link .slick-slide').eq(currentSlide).addClass('slick-current');
+					break;
+				case 1:
+					//$(this).closest(".theme_consultation").css("background-image","url(img/consultation_bg2.jpg)");
+					$(".theme_consultation").css("background-image", "url(img/consultation_bg2.jpg)");
+					$('.theme_consultation_link .slick-slide').eq(currentSlide).addClass('slick-current');
+					break;
+				case 2:
+					//$(this).closest(".theme_consultation").css("background-image","url(img/consultation_bg3.jpg)");
+					$(".theme_consultation").css("background-image", "url(img/consultation_bg3.jpg)");
+					$('.theme_consultation_link .slick-slide').eq(currentSlide).addClass('slick-current');
+					break;
+				case 3:
+					//$(this).closest(".theme_consultation").css("background-image","url(img/consultation_bg4.jpg)");
+					$(".theme_consultation").css("background-image", "url(img/consultation_bg4.jpg)");
+					$('.theme_consultation_link .slick-slide').eq(currentSlide).addClass('slick-current');
+					break;
+			}
+		}
 </script>
 </html>

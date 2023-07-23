@@ -54,25 +54,25 @@
                                     <img class="active_popup" src="img/news_page_photo1.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo2.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo1.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo3.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo1.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo4.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo1.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo5.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo1.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo6.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo1.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo7.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo1.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo8.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo1.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -94,28 +94,28 @@
                             </div>
                             <div class="theme_news_page_photo">
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo1.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo2.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
                                     <img class="active_popup" src="img/news_page_photo2.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo3.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo2.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo4.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo2.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo5.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo2.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo6.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo2.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo7.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo2.jpg" alt="">
                                 </div>
                                 <div class="theme_news_page_photo_item">
-                                    <img class="active_popup" src="img/news_page_photo8.jpg" alt="">
+                                    <img class="active_popup" src="img/news_page_photo2.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -175,6 +175,9 @@
 
 </body>
 <script>
+    // 目前顯示的照片索引
+    let currentPhotoIndex = 0;
+    let $photoItems ;
 	$(document).ready(function () {
 		new WOW().init();
 
@@ -193,16 +196,61 @@
 		});
 
 		$('.theme_news_page_slider').append($('#btn_back'));
-		
-        $(".active_popup").click(function() {
-            $(".popup_photo").addClass("is_acted");
+
+        // 監聽輪播切換事件
+        $('.theme_news_page_slider').on('afterChange', function(event, slick, currentSlide) {
+            // 在這裡根據切換到的頁面（currentSlide）執行相應的動作
+            InitClickPopupImg();
         });
-		
+
+        InitClickPopupImg();
+
+        // // 獲取 prev 和 next 按鈕
+        const prevButton = $('.popup_photo .prev');
+        const nextButton = $('.popup_photo .next');
+        // 點擊 "prev" 按鈕時切換到前一張相片
+        prevButton.on('click', function() {
+            currentPhotoIndex = (currentPhotoIndex - 1 + $photoItems.toArray().length) % $photoItems.toArray().length;
+            updatePopupImage(currentPhotoIndex);
+        });
+
+        // 點擊 "next" 按鈕時切換到後一張相片
+        nextButton.on('click', function() {
+            currentPhotoIndex = (currentPhotoIndex + 1) % $photoItems.toArray().length;
+            updatePopupImage(currentPhotoIndex);
+        });
+
         $(".popup_photo .close").click(function() {
             $(".popup_photo").removeClass("is_acted");
         });
             
 	})
+
+    function InitClickPopupImg() {
+        if($photoItems){
+            $photoItems.off('click');
+        }
+        const $currentSlide = $('.slick-slide.slick-current.slick-active .theme_news_page_photo');
+        $photoItems = $currentSlide.find('.theme_news_page_photo_item');
+        //console.log($photoItems);
+        // 點擊照片預覽項目時顯示對應的照片及描述
+        $photoItems.toArray().forEach(function(item, index) {
+            item.addEventListener('click', function() {
+                updatePopupImage(index);
+            });
+        });
+    }
+
+    function updatePopupImage(index) {
+        console.log("updatePopupImage");
+        const $imgSrc = $photoItems.eq(index).find('img').attr('src');
+        const $imgDescription = $photoItems.eq(index).find('img').attr('alt');
+        const $popupImg = $('.popup_content.popup_img');
+        $popupImg.find('img').attr('src', $imgSrc);
+        $popupImg.find('span').text($imgDescription);
+        currentPhotoIndex = index;
+        $(".popup_photo").addClass("is_acted");
+    }
 
 </script>
 </html>
