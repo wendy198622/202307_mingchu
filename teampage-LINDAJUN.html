@@ -151,7 +151,57 @@
             $(".popup_photo").removeClass("is_acted");
         });
 		
+        InitClickPopupImg()
 	})
+    // 目前顯示的照片索引
+    let currentPhotoIndex = 0;
+    let $photoItems ;
 
+    function InitClickPopupImg() {
+
+        // // 獲取 prev 和 next 按鈕
+        const prevButton = $('.popup_photo .prev');
+        const nextButton = $('.popup_photo .next');
+
+        // 點擊 "prev" 按鈕時切換到前一張相片
+        prevButton.on('click', function() {
+            currentPhotoIndex = (currentPhotoIndex - 1 + $photoItems.toArray().length) % $photoItems.toArray().length;
+            updatePopupImage(currentPhotoIndex);
+        });
+
+        // 點擊 "next" 按鈕時切換到後一張相片
+        nextButton.on('click', function() {
+            currentPhotoIndex = (currentPhotoIndex + 1) % $photoItems.toArray().length;
+            updatePopupImage(currentPhotoIndex);
+        });
+
+
+        if($photoItems){
+            $photoItems.off('click');
+        }
+
+
+        const $currentSlide = $('.theme_teampage_member_case');
+        $photoItems = $currentSlide.find('.active_popup');
+        //console.log($photoItems);
+        // 點擊照片預覽項目時顯示對應的照片及描述
+        $photoItems.toArray().forEach(function(item, index) {
+            item.addEventListener('click', function() {
+                updatePopupImage(index);
+            });
+        });
+    }
+
+    function updatePopupImage(index) {
+        console.log("updatePopupImage");
+        const $imgSrc = $photoItems.eq(index).attr('src');
+
+        const $imgDescription = $photoItems.eq(index).attr('alt');
+        const $popupImg = $('.popup_content.popup_img');
+        $popupImg.find('img').attr('src', $imgSrc);
+        $popupImg.find('span').text($imgDescription);
+        currentPhotoIndex = index;
+        $(".popup_photo").addClass("is_acted");
+    }
 </script>
 </html>
