@@ -110,23 +110,21 @@ header{
                     padding-right: 0;
                 }
 
-                .menu_item_title, .menu_item_info{
+                .menu_item_title, .menu_item_info,
+                .menu_item_title a, .menu_item_info a{
+                    font-size: 20px;
+                    font-family: 'Noto Serif TC', serif;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    @media (max-width:960px){
+                        font-size: 24px;
+                    }
 
-                    a{
-                        font-size: 20px;
-                        font-family: 'Noto Serif TC', serif;
-                        font-weight: 400;
-                        letter-spacing: 1px;
-                        @media (max-width:960px){
-                            font-size: 24px;
-                        }
-
-                        span{
-                            display: block;
-                            font-size: 12px;
-                            text-transform: uppercase;  
-                            font-family: 'Playfair Display', serif;
-                        }
+                    span{
+                        display: block;
+                        font-size: 12px;
+                        text-transform: uppercase;  
+                        font-family: 'Playfair Display', serif;
                     }
                 }
 
