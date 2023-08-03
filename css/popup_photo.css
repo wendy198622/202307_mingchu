@@ -653,10 +653,13 @@ footer #goTop:hover {
 
 .popup_photo .popup_content .photo {
   width: 90%;
+  height: 0;
+  padding-bottom: 65%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
-.popup_photo .popup_content .photo span {
+.popup_photo .popup_content span {
   color: #fff;
   font-size: 18px;
   margin-top: 30px;

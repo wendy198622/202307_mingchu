@@ -19,18 +19,22 @@
         
         .photo{
             width: 90%;
+            height: 0;
+            padding-bottom: 65%;
             margin: 0 auto;
+            overflow: hidden;
 
-            img{}
-
-            span{
-                color: #fff;
-                font-size: 18px;
-                margin-top: 30px;
-                display: block;
-                text-align: center;
-                letter-spacing: 2px;
+            img{
             }
+        }
+
+        span{
+            color: #fff;
+            font-size: 18px;
+            margin-top: 30px;
+            display: block;
+            text-align: center;
+            letter-spacing: 2px;
         }
 
     }
