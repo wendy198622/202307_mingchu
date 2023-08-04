@@ -792,6 +792,7 @@ footer #footerMenu .menuBox .menu_item .menu_item_content ul li a {
   padding: 0;
   color: #fff;
   font-weight: 300;
+  white-space: nowrap;
 }
 
 @media (max-width: 1280px) {
@@ -2076,6 +2077,7 @@ footer #goTop:hover {
   background: url(../img/theme_consultation_form_bg_02.png) center top repeat-y;
   background-size: 100% auto;
   padding: 20px 40px 40px;
+  overflow: hidden;
 }
 
 @media (max-width: 1280px) {
@@ -2096,6 +2098,27 @@ footer #goTop:hover {
   margin-top: 16px;
   position: relative;
   overflow: hidden;
+  float: left;
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item.half {
+  width: 45%;
+}
+
+@media (max-width: 960px) {
+  .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item.half {
+    width: 100%;
+  }
+}
+
+.theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item.half:nth-child(odd) {
+  margin-right: 10%;
+}
+
+@media (max-width: 960px) {
+  .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item.half:nth-child(odd) {
+    margin-right: 0%;
+  }
 }
 
 .theme .theme_consultation .theme_consultation_inner .theme_consultation_form .item.noline {

@@ -948,6 +948,7 @@
                 background: url(../img/theme_consultation_form_bg_02.png) center top repeat-y;
                 background-size: 100% auto;
                 padding: 20px 40px 40px;
+                overflow: hidden;
                 @media (max-width:1280px){
                     width: 51%;
                 }
@@ -962,6 +963,21 @@
                     margin-top: 16px;
                     position: relative;
                     overflow: hidden;
+                    float: left;
+
+                    &.half{
+                        width: 45%;
+                        @media (max-width:960px){
+                            width: 100%;
+                        }
+
+                        &:nth-child(odd){
+                            margin-right: 10%;
+                            @media (max-width:960px){
+                                margin-right: 0%;
+                            }
+                        }
+                    }
 
                     // &:after{
                     //     content: "";

@@ -792,6 +792,7 @@ footer #footerMenu .menuBox .menu_item .menu_item_content ul li a {
   padding: 0;
   color: #fff;
   font-weight: 300;
+  white-space: nowrap;
 }
 
 @media (max-width: 1280px) {
