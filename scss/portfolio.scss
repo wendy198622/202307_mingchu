@@ -573,9 +573,9 @@
                                         fill:#fff; 
                                         stroke: #fff; 
                                         transition: all .3s;
-                                        @media (max-width:420px){
-                                            width: 46px;
-                                            height: 40px;
+                                        @media (max-width:600px){
+                                            width: 42px;
+                                            // height: auto;
                                         }
                                     }
                                     span{
@@ -881,6 +881,10 @@
                                         fill:#fff; 
                                         stroke: #fff; 
                                         transition: all .3s;
+                                        @media (max-width:600px){
+                                            width: 42px;
+                                            // height: auto;
+                                        }
                                     }
                                     span{
                                         color: #fff;
@@ -1000,9 +1004,9 @@
                                     fill:#fff; 
                                     stroke: #fff; 
                                     transition: all .3s;
-                                    @media (max-width:420px){
-                                        width: 46px;
-                                        height: 40px;
+                                    @media (max-width:600px){
+                                        width: 42px;
+                                        // height: auto;
                                     }
                                 }
                                 span{
@@ -1112,6 +1116,7 @@
                                 text-align: justify;
                                 text-justify: distribute-all-lines;
                                 text-align-last: justify;
+                                margin-right: 20px;
                             }
                         }
                     }
@@ -1339,6 +1344,7 @@
                         color: #9f8268;
                         margin-left: 18px;
                         border-bottom: 1px solid #c9a063;
+                        letter-spacing: 2px;
                         @media (max-width:1280px){
                             font-size: 16px;
                         }             
@@ -1373,6 +1379,14 @@
                         &:focus{
                             outline: 0;
                         }
+                    }
+
+                    input::placeholder,
+                    textarea::placeholder {
+                        color: #ccc;
+                        letter-spacing: 2px;
+                        font-weight: 400;
+
                     }
 
                     button{
