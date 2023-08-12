@@ -2219,6 +2219,10 @@ footer #goTop:hover {
   bottom: 6%;
 }
 
+.theme_feature_slider.slick-slider button.prev, .theme_feature_slider.slick-slider button.next {
+  bottom: 6%;
+}
+
 .theme_project_slider.slick-slider.slick-dotted.slick-slider .slick-dots {
   bottom: 6%;
 }

@@ -1116,6 +1116,12 @@
             bottom: 6%;
         }
     }
+
+    button{
+        &.prev, &.next{
+            bottom: 6%;
+        }
+    }
 }
 
 .theme_project_slider.slick-slider{
