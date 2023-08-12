@@ -200,10 +200,7 @@ input, button, textarea{
             outline: none;
             background: transparent;
             @media (max-width:1080px){
-                bottom: 7%;
-            }
-            @media (max-width:960px){
-                bottom: 4%;
+                bottom: -2%;
             }
         
             a {

@@ -26,95 +26,12 @@
 
         .theme_feature_slider{
 
-            .theme_feature_version1{
-                position: relative;
-
-                .theme_feature_image{
-                    .pc{ display: block;}
-                    .mob{ display: none;}
-                    @media (max-width:800px){
-                        .pc{ display: none;}
-                        .mob{ display: block;}
-                    }
-                }
-
-                .theme_feature_info{
-                    width: 30%;
-                    height: 0;
-                    padding-bottom: 30%;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    margin: auto;
-                    @media (max-width:800px){
-                        width: 64%;
-                        height: 0;
-                        padding-bottom: 64%;
-                    }
-                }
-            }
-
-            .theme_feature_version2{
-                position: relative;
-                
-                .theme_feature_image{
-                    .pc{ display: block;}
-                    .mob{ display: none;}
-                    @media (max-width:800px){
-                        .pc{ display: none;}
-                        .mob{ display: block;}
-                    }
-                }
-
-                .theme_feature_info{
-                    background: url(../img/feature_version2_textbg.jpg) right center no-repeat;
-                    background-size: 100% auto;
-                    width: 40%;
-                    height: 0;
-                    padding-bottom: 35%;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    margin: auto;
-                    transform: translateX(50%);
-                    @media (max-width:800px){
-                        width: 90%;
-                        height: 0;
-                        padding-bottom: 78%;
-                        transform: translateX(24%);;
-                    }
-                }
-            }
-
-            .theme_feature_version3{
-                position: relative;
-                
-                .theme_feature_image{
-                    .pc{ display: block;}
-                    .mob{ display: none;}
-                    @media (max-width:800px){
-                        .pc{ display: none;}
-                        .mob{ display: block;}
-                    }
-                }
-
-                .theme_feature_info{
-                    width: 40%;
-                    height: 0;
-                    padding-bottom: 15%;
-                    position: absolute;
-                    bottom: 5%;
-                    left: 5%;
-                    @media (max-width:800px){
-                        width: 90%;
-                        height: 0;
-                        padding-bottom: 35%;
-                        transform: translateX(0%);;
-                    }
+            .theme_feature_item{
+                .pc{ display: block;}
+                .mob{ display: none;}
+                @media (max-width:960px){
+                    .pc{ display: none;}
+                    .mob{ display: block;}
                 }
             }
         }
@@ -124,11 +41,8 @@
     .theme_team{
         background: url(../img/team_bg.jpg) center top no-repeat;
         background-size: cover;
-        padding: 3%;
+        padding: 5% 0;
         background-attachment: fixed;
-        @media (max-width:1280px){
-            padding: 3% 0 5%;
-        }
 
         .theme_team_title{
             text-align: center;
@@ -173,10 +87,7 @@
             .theme_team_slider{
                 padding-bottom: 5%;
                 @media (max-width:1080px){
-                    padding-bottom: 20%;
-                }
-                @media (max-width:480px){
-                    padding-bottom: 28%;
+                    padding-bottom: 10%;
                 }
 
                 .theme_team_member_item{
@@ -263,7 +174,7 @@
     .theme_portfolio{
         background: url(../img/portfolio_bg.jpg) center top no-repeat;
         background-size: cover;
-        padding: 5% 0 3%;
+        padding: 5% 0;
         overflow: hidden;
 
         .theme_portfolio_title{
@@ -296,13 +207,10 @@
 
         .theme_portfolio_slider{
             width: 100%;
-            padding-bottom: 6%;
-            @media (max-width:600px){
-                padding-bottom: 20%;
-            }
-            @media (max-width:480px){
-                padding-bottom: 28%;
-            }
+            padding-bottom: 10%;
+            // @media (max-width:1080px){
+            //     padding-bottom: 10%;
+            // }
 
             .slick-slide{
                 opacity: 0.4;
@@ -592,7 +500,7 @@
     .theme_news{
         background: url(../img/news_bg.jpg) center top no-repeat;
         background-size: cover;
-        padding: 5% 0 3%;
+        padding: 5% 0;
         overflow: hidden;
 
         .theme_news_title{
@@ -625,12 +533,9 @@
 
         .theme_news_slider{
             width: 100%;
-            padding-bottom: 6%;
-            @media (max-width:600px){
-                padding-bottom: 20%;
-            }
-            @media (max-width:480px){
-                padding-bottom: 28%;
+            padding-bottom: 5%;
+            @media (max-width:1080px){
+                padding-bottom: 10%;
             }
 
             .slick-list{
@@ -1203,23 +1108,12 @@
     }
 }
 
-.slider3.slick-slider{
-    button{
-        &.slick-prev{
-            left: 50%;
-            margin-left: -770px;
-            @media (max-width:1480px){
-                left: -10px;
-                margin-left: 0;
-            }
-        }
-        &.slick-next{
-            right: 50%;
-            margin-right: -770px;
-            @media (max-width:1480px){
-                right: -10px;
-                margin-right: 0;
-            }
+.theme_feature_slider.slick-slider{
+
+    &.slick-dotted.slick-slider{
+    
+        .slick-dots{
+            bottom: 6%;
         }
     }
 }

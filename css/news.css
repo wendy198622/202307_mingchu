@@ -243,13 +243,7 @@ input, button, textarea {
 
 @media (max-width: 1080px) {
   .slick-slider button.prev, .slick-slider button.next {
-    bottom: 7%;
-  }
-}
-
-@media (max-width: 960px) {
-  .slick-slider button.prev, .slick-slider button.next {
-    bottom: 4%;
+    bottom: -2%;
   }
 }
 
