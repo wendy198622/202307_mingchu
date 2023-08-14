@@ -515,12 +515,16 @@
 		$('#header').load('page/header.html');
 		$('#footer').load('page/footer.html');
 
+        const urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get('id');
+
         $('.theme_portfolio_classic_page_others_slider').slick({
             dots: true,
             arrows: true,
             infinite: false,
             slidesToShow: 4,
             slidesToScroll: 1,
+            initialSlide: parseInt(id),
             prevArrow: '<button class="prev"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
             nextArrow: '<button class="next"><a href="#0"><span class="line"></span><span class="line"></span><div class="arrow"></div></a></button>',
             responsive: [
@@ -552,6 +556,7 @@
             draggable: false,
             slidesToShow: 1,
             slidesToScroll: 1,
+            initialSlide: parseInt(id),
             lazyLoad: 'ondemand',
             prevArrow: '<button class="prev-news"><a href="#0"><span class="material-icons">arrow_left</span>PREV</a></button>',
             nextArrow: '<button class="next-news"><a href="#0"><span class="material-icons">arrow_right</span>NEXT</a></button>',

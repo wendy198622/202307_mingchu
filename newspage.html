@@ -362,11 +362,16 @@
 		$('#header').load('page/header.html');
 		$('#footer').load('page/footer.html');
 
+        const urlParams = new URLSearchParams(window.location.search);
+        let id = urlParams.get('id');
+
+        console.log(id)
 		$('.theme_news_page_slider').slick({
 			dots: false,
 			arrows: true,
 			infinite: false,
 			slidesToShow: 1,
+            initialSlide: parseInt(id),
 			slidesToScroll: 1,
             lazyLoad: 'ondemand',
             draggable: false,
@@ -379,6 +384,7 @@
         // 監聽輪播切換事件
         $('.theme_news_page_slider').on('afterChange', function(event, slick, currentSlide) {
             // 在這裡根據切換到的頁面（currentSlide）執行相應的動作
+            console.log("在這裡根據切換到的頁面（currentSlide）執行相應的動作")
             InitClickPopupImg();
         });
 
